@@ -19,6 +19,7 @@
 
     <!-- BOOTSTRAP CSS -->
     <link id="style" href="../assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 
     <!-- STYLE CSS -->
     <link href="../assets/css/style.css" rel="stylesheet" />
@@ -35,6 +36,9 @@
     <!-- INTERNAL Switcher css -->
     <link href="../assets/switcher/css/switcher.css" rel="stylesheet" />
     <link href="../assets/switcher/demo.css" rel="stylesheet" />
+
+    <!-- OVERRIDE CSS-->
+    <link rel="stylesheet" href="../assets/css/override.css">
 
 </head>
 
@@ -361,7 +365,7 @@
                         </a>
                         <!-- LOGO -->
                         <div class="main-header-center ms-3 d-none d-lg-block">
-                            <input type="text" class="form-control" id="typehead" placeholder="Search for results..." autocomplete="off">
+                            <input type="text" class="form-control" id="typehead" placeholder="Search for student...." autocomplete="off">
                             <button class="btn px-0 pt-2"><i class="fe fe-search" aria-hidden="true"></i></button>
                         </div>
                         <div class="d-flex order-lg-2 ms-auto header-right-icons">
@@ -487,53 +491,439 @@
                     </div>
                     <div class="main-sidemenu">
                         <div class="slide-left disabled" id="slide-left"><svg xmlns="http://www.w3.org/2000/svg" fill="#7b8191" width="24" height="24" viewBox="0 0 24 24"><path d="M13.293 6.293 7.586 12l5.707 5.707 1.414-1.414L10.414 12l4.293-4.293z"/></svg></div>
+                        <br>
                         <ul class="side-menu">
                           
+                            <!-- USER ACCOUNT-->
                             <li class="slide">
-                                <a class="side-menu__item has-link" data-bs-toggle="slide" href="index.html"><i class="side-menu__icon fe fe-home"></i><span class="side-menu__label">Dashboard</span></a>
+                                <a class="side-menu__item" data-bs-toggle="slide" href="javascript:void(0)"><i class="side-menu__icon bi bi-person"></i><span class="side-menu__label">User Account</span><i class="angle fe fe-chevron-right"></i></a>
+                                <ul class="slide-menu">
+                                    <li class="side-menu-label1"><a href="javascript:void(0)">User Account</a></li>
+                                    <li><a href="#" class="slide-item"> Add new</a></li>
+                                    <li><a href="#" class="slide-item"> View</a></li>
+                                    <br>
+                                    <p class="sidebar-info text-gray">
+                                        <i class="bi bi-info-circle-fill"></i> INFO<br>
+                               Create new user account who has access to the app. <br>
+                               View list of users' account. <br>
+                               Edit/view their privileges and permissions.
+                                    </p>
+                                </ul>
+                               
                             </li>
-                           
+                            <!-- USER ACCOUNT ENDS HERE-->
                           
                        
+                           <!-- STUDENT INFO-->
+                           <li class="slide">
+                            <a class="side-menu__item" data-bs-toggle="slide" href="javascript:void(0)"><i class="side-menu__icon bi bi-mortarboard"></i><span class="side-menu__label">Student Info</span><i class="angle fe fe-chevron-right"></i></a>
+                            <ul class="slide-menu">
+                                <li class="side-menu-label1"><a href="javascript:void(0)">Student Info</a></li>
+                                <li><a href="#" class="slide-item"> Add new profile</a></li>
+                                <li><a href="#" class="slide-item"> View profile list</a></li>
+                                <li><a href="#" class="slide-item"> View photo album</a></li>
+                                <li><a href="#" class="slide-item"> View class lists</a></li>
+                                <br>
+                                <p class="sidebar-info text-gray">
+                                    <i class="bi bi-info-circle-fill"></i> INFO<br>
+                                    Create new student profile.<br>
+                                    View, search and edit list of students.
+                                </p>
+                            </ul>
                            
-                            <li class="slide">
-                                <a class="side-menu__item" data-bs-toggle="slide" href="javascript:void(0)"><i class="side-menu__icon fe fe-shopping-bag"></i><span class="side-menu__label">E-Commerce</span><i class="angle fe fe-chevron-right"></i></a>
-                                <ul class="slide-menu">
-                                    <li class="side-menu-label1"><a href="javascript:void(0)">E-Commerce</a></li>
-                                    <li><a href="shop.html" class="slide-item"> Shop</a></li>
-                                    <li><a href="shop-description.html" class="slide-item"> Product Details</a></li>
-                                    <li><a href="cart.html" class="slide-item"> Shopping Cart</a></li>
-                                    <li><a href="add-product.html" class="slide-item"> Add Product</a></li>
-                                    <li><a href="wishlist.html" class="slide-item"> Wishlist</a></li>
-                                    <li><a href="checkout.html" class="slide-item"> Checkout</a></li>
-                                </ul>
-                            </li>
+                        </li>
+                        <!-- STUDENT INFO ENDS HERE-->
+
+
+                          <!-- STUDENT RESULTS-->
+                          <li class="slide">
+                            <a class="side-menu__item" data-bs-toggle="slide" href="javascript:void(0)"><i class="side-menu__icon bi bi-file-text"></i><span class="side-menu__label">Student Results</span><i class="angle fe fe-chevron-right"></i></a>
+                            <ul class="slide-menu">
+                                <li class="side-menu-label1"><a href="javascript:void(0)">Student Results</a></li>
+                                <li><a href="#" class="slide-item"> Add new result record</a></li>
+                                <li><a href="#" class="slide-item"> Add new social behaviour</a></li>
+                                <li><a href="#" class="slide-item"> Add new comment</a></li>
+                                <li><a href="#" class="slide-item"> Add new mock result</a></li>
+                                <li><a href="#" class="slide-item"> View comments</a></li>
+                                <li><a href="#" class="slide-item"> View social behaviour</a></li>
+                                <li><a href="#" class="slide-item"> View master Sheets</a></li>
+                                <li><a href="#" class="slide-item"> View stream sheets</a></li>
+                                <li><a href="#" class="slide-item"> View mock results</a></li>
+
+                                <br>
+                                <p class="sidebar-info text-gray">
+                                    <i class="bi bi-info-circle-fill"></i> INFO<br>
+                                    Record students' academic results and comments.<br>
+                                    Record students' social behaviours.<br>
+                                    View, search students' academic results.
+                                </p>
+                            </ul>
+                           
+                        </li>
+                        <!-- STUDENT RESULTS ENDS HERE-->
                        
 
+                            <!-- STUDENT ATTENDANCE -->
                             <li class="slide">
-                                <a class="side-menu__item" data-bs-toggle="slide" href="javascript:void(0)"><i class="side-menu__icon fe fe-map-pin"></i><span class="side-menu__label">Maps</span><i class="angle fe fe-chevron-right"></i></a>
+                                <a class="side-menu__item" data-bs-toggle="slide" href="javascript:void(0)"><i class="side-menu__icon bi bi-calendar2-check""></i><span class="side-menu__label">Students Attendance</span><i class="angle fe fe-chevron-right"></i></a>
                                 <ul class="slide-menu">
-                                    <li class="side-menu-label1"><a href="javascript:void(0)">Maps</a></li>
-                                    <li><a href="maps1.html" class="slide-item">Leaflet Maps</a></li>
-                                    <li><a href="maps2.html" class="slide-item">Mapel Maps</a></li>
-                                    <li><a href="maps.html" class="slide-item">Vector Maps</a></li>
+                                    <li class="side-menu-label1"><a href="javascript:void(0)">Students Attendance</a></li>
+                                    <li><a href="#" class="slide-item"> Add New</a></li>
+                                    <li><a href="#" class="slide-item"> View</a></li>
+                                    <br>
+                                    <p class="sidebar-info text-gray">
+                                        <i class="bi bi-info-circle-fill"></i> INFO<br>
+                                        Make entry of students' class attendance.<br>
+                                        View and search student's attendance report.
+                                    </p>
                                 </ul>
+                               
                             </li>
-                            <li class="slide">
-                                <a class="side-menu__item" data-bs-toggle="slide" href="javascript:void(0)"><i class="side-menu__icon fe fe-bar-chart-2"></i><span class="side-menu__label">Charts</span><span class="badge bg-secondary side-badge">6</span><i class="angle fe fe-chevron-right hor-angle"></i></a>
+                            <!-- STUDENT ATTENDANCE ENDS HERE-->
+
+
+                             <!-- STAFF INFO -->
+                             <li class="slide">
+                                <a class="side-menu__item" data-bs-toggle="slide" href="javascript:void(0)"><i class="side-menu__icon bi bi-person-vcard
+                              "></i><span class="side-menu__label">Staff Info</span><i class="angle fe fe-chevron-right"></i></a>
                                 <ul class="slide-menu">
-                                    <li class="side-menu-label1"><a href="javascript:void(0)">Charts</a></li>
-                                    <li><a href="chart-chartist.html" class="slide-item">Chart Js</a></li>
-                                    <li><a href="chart-flot.html" class="slide-item"> Flot Charts</a></li>
-                                    <li><a href="chart-echart.html" class="slide-item"> ECharts</a></li>
-                                    <li><a href="chart-morris.html" class="slide-item"> Morris Charts</a></li>
-                                    <li><a href="chart-nvd3.html" class="slide-item"> Nvd3 Charts</a></li>
-                                    <li><a href="charts.html" class="slide-item"> C3 Bar Charts</a></li>
-                                    <li><a href="chart-line.html" class="slide-item"> C3 Line Charts</a></li>
-                                    <li><a href="chart-donut.html" class="slide-item"> C3 Donut Charts</a></li>
-                                    <li><a href="chart-pie.html" class="slide-item"> C3 Pie charts</a></li>
+                                    <li class="side-menu-label1"><a href="javascript:void(0)">Staff Info</a></li>
+                                    <li><a href="#" class="slide-item"> Add new profile</a></li>
+                                    <li><a href="#" class="slide-item"> View profile lists</a></li>
+                                    <li><a href="#" class="slide-item"> View photo album</a></li>
+                                    <br>
+                                    <p class="sidebar-info text-gray">
+                                        <i class="bi bi-info-circle-fill"></i> INFO<br>
+                                        Create new staff profile.<br>
+                                        View, search and edit staff profile.
+                                    </p>
                                 </ul>
+                               
                             </li>
+                            <!-- STAFF INFO ENDS HERE-->
+
+      <!-- PAYMENT/BILLING-->
+      <li class="slide">
+        <a class="side-menu__item" data-bs-toggle="slide" href="javascript:void(0)"><i class="side-menu__icon bi bi-credit-card-2-front"></i><span class="side-menu__label">Payment/Billing</span><i class="angle fe fe-chevron-right"></i></a>
+        <ul class="slide-menu">
+            <li class="side-menu-label1"><a href="javascript:void(0)">Payment/Billing</a></li>
+            <li><a href="#" class="slide-item"> Add new</a></li>
+            <li><a href="#" class="slide-item"> View</a></li>
+            <br>
+            <p class="sidebar-info text-gray">
+                <i class="bi bi-info-circle-fill"></i> INFO<br>
+                Create entry of all financial payments.<br>
+                View, search all financial payment entries.
+            </p>
+        </ul>
+       
+    </li>
+    <!-- PAYMENT/BILLING ENDS HERE-->
+                                                  
+                        
+    
+      <!-- ASSESSMENT-->
+      <li class="slide">
+        <a class="side-menu__item" data-bs-toggle="slide" href="javascript:void(0)"><i class="side-menu__icon bi bi-pencil-square"></i><span class="side-menu__label">Assessments</span><i class="angle fe fe-chevron-right"></i></a>
+        <ul class="slide-menu">
+            <li class="side-menu-label1"><a href="javascript:void(0)">Assessments</a></li>
+            <li><a href="#" class="slide-item"> Add new</a></li>
+            <li><a href="#" class="slide-item"> View</a></li>
+            <li><a href="#" class="slide-item"> Upload pdf assignments</a></li>
+            <br>
+            <p class="sidebar-info text-gray">
+                <i class="bi bi-info-circle-fill"></i> INFO<br>
+                Upload assessments or assignments for students.<br>
+                View and manage list of assessments or assignments.
+            </p>
+        </ul>
+       
+    </li>
+    <!-- ASSESSMENT ENDS HERE-->
+
+
+      <!-- CLASS/SUBJECTS-->
+      <li class="slide">
+        <a class="side-menu__item" data-bs-toggle="slide" href="javascript:void(0)"><i class="side-menu__icon bi bi-journals"></i><span class="side-menu__label">Class/Subjects</span><i class="angle fe fe-chevron-right"></i></a>
+        <ul class="slide-menu">
+            <li class="side-menu-label1"><a href="javascript:void(0)">Class/Subjects</a></li>
+            <li><a href="#" class="slide-item"> Add new</a></li>
+            <li><a href="#" class="slide-item"> View</a></li>
+            <br>
+            <p class="sidebar-info text-gray">
+                <i class="bi bi-info-circle-fill"></i> INFO<br>
+                Setup student classes and respective subjects offered in the class.<br>
+                View all student classess and their respective subjects.
+            </p>
+        </ul>
+       
+    </li>
+    <!-- CLASS/SUBJECTS ENDS HERE-->
+
+
+        <!-- ACADEMIC SESSIONS-->
+        <li class="slide">
+            <a class="side-menu__item" data-bs-toggle="slide" href="javascript:void(0)"><i class="side-menu__icon bi bi-hourglass-bottom"></i><span class="side-menu__label">Academic Sessions</span><i class="angle fe fe-chevron-right"></i></a>
+            <ul class="slide-menu">
+                <li class="side-menu-label1"><a href="javascript:void(0)">Academic Sessions</a></li>
+                <li><a href="#" class="slide-item"> Add new</a></li>
+                <li><a href="#" class="slide-item"> View</a></li>
+                <br>
+                <p class="sidebar-info text-gray">
+                    <i class="bi bi-info-circle-fill"></i> INFO<br>
+                    Create new academic session.<br>
+                    View all academic sessions.
+                </p>
+            </ul>
+           
+        </li>
+        <!-- ACADEMIC LEVELS ENDS HERE-->
+
+
+         <!-- ACADEMIC SESSIONS-->
+         <li class="slide">
+            <a class="side-menu__item" data-bs-toggle="slide" href="javascript:void(0)"><i class="side-menu__icon bi bi-layers"></i><span class="side-menu__label">Academic Levels</span><i class="angle fe fe-chevron-right"></i></a>
+            <ul class="slide-menu">
+                <li class="side-menu-label1"><a href="javascript:void(0)">Academic Levels</a></li>
+                <li><a href="#" class="slide-item"> Add new</a></li>
+                <li><a href="#" class="slide-item"> View</a></li>
+                <br>
+                <p class="sidebar-info text-gray">
+                    <i class="bi bi-info-circle-fill"></i> INFO<br>
+                    Create new academic level.<br>
+                    View all academic levels.
+                </p>
+            </ul>
+           
+        </li>
+        <!-- ACADEMIC SESSIONS ENDS HERE-->
+
+
+          <!-- NEWS & EVENT-->
+          <li class="slide">
+            <a class="side-menu__item" data-bs-toggle="slide" href="javascript:void(0)"><i class="side-menu__icon bi bi-newspaper"></i><span class="side-menu__label">News & Events</span><i class="angle fe fe-chevron-right"></i></a>
+            <ul class="slide-menu">
+                <li class="side-menu-label1"><a href="javascript:void(0)">News & Events</a></li>
+                <li><a href="#" class="slide-item"> Add new</a></li>
+                <li><a href="#" class="slide-item"> View</a></li>
+                <br>
+                <p class="sidebar-info text-gray">
+                    <i class="bi bi-info-circle-fill"></i> INFO<br>
+                    Create and manage news and events for school website.<br>
+                    View, search and edit news and events.
+                    
+                    
+                </p>
+            </ul>
+           
+        </li>
+        <!-- NEWS & EVENT ENDS HERE-->
+
+
+        <!-- ACADEMIC CALENDER-->
+          <li class="slide">
+            <a class="side-menu__item" data-bs-toggle="slide" href="javascript:void(0)"><i class="side-menu__icon bi bi-calendar-date"></i><span class="side-menu__label">Academic Calendar</span><i class="angle fe fe-chevron-right"></i></a>
+            <ul class="slide-menu">
+                <li class="side-menu-label1"><a href="javascript:void(0)">Academic Calendar</a></li>
+                <li><a href="#" class="slide-item"> Add new</a></li>
+                <li><a href="#" class="slide-item"> View</a></li>
+                <br>
+                <p class="sidebar-info text-gray">
+                    <i class="bi bi-info-circle-fill"></i> INFO<br>
+                    Create entries for the academic calendar.<br>
+                    View and manage all entries of academic calendar.
+                    
+                    
+                </p>
+            </ul>
+           
+        </li>
+        <!-- ACADEMIC CALENDER ENDS HERE-->
+        
+
+         <!-- STATISTICS-->
+         <li class="slide">
+            <a class="side-menu__item" data-bs-toggle="slide" href="javascript:void(0)"><i class="side-menu__icon bi bi-bar-chart-line"></i><span class="side-menu__label">Statistics</span><i class="angle fe fe-chevron-right"></i></a>
+            <ul class="slide-menu">
+                <li class="side-menu-label1"><a href="javascript:void(0)">Statistics</a></li>
+                <li><a href="#" class="slide-item"> Class performance</a></li>
+                <li><a href="#" class="slide-item"> Student performance</a></li>
+                <li><a href="#" class="slide-item"> Overall performance</a></li>
+                <li><a href="#" class="slide-item"> Performance board</a></li>
+                <br>
+                <div class="h5">Population Analysis</div>
+                <br>
+                <li><a href="#" class="slide-item"> Admission</a></li>
+                <li><a href="#" class="slide-item"> Class population</a></li>
+                <li><a href="#" class="slide-item"> Staff population</a></li>
+                <br>
+                <p class="sidebar-info text-gray">
+                    <i class="bi bi-info-circle-fill"></i> INFO<br>
+                    View and search statistical analysis for all academic result performance.<br>
+                    View and search statistical analysis of admission and employment population.<br>
+                    
+                    
+                </p>
+            </ul>
+           
+        </li>
+        <!-- STATISTICS ENDS HERE-->
+
+
+          <!-- EMAIL/SMS-->
+          <li class="slide">
+            <a class="side-menu__item" data-bs-toggle="slide" href="javascript:void(0)"><i class="side-menu__icon bi bi-envelope-at"></i><span class="side-menu__label">Email/SMS</span><i class="angle fe fe-chevron-right"></i></a>
+            <ul class="slide-menu">
+                <li class="side-menu-label1"><a href="javascript:void(0)">Email/SMS</a></li>
+                <li><a href="#" class="slide-item"> Email</a></li>
+                <li><a href="#" class="slide-item"> SMS</a></li>
+                <br>
+                <p class="sidebar-info text-gray">
+                    <i class="bi bi-info-circle-fill"></i> INFO<br>
+                    Send sms to students or parents or guardians.<br>
+                    Send email to students or parents or guardians.
+                    
+                    
+                </p>
+            </ul>
+           
+        </li>
+        <!-- EMAIL/SMS ENDS HERE-->
+
+
+          <!-- ADMISSION-->
+          <li class="slide">
+            <a class="side-menu__item" data-bs-toggle="slide" href="javascript:void(0)"><i class="side-menu__icon bi bi-file-earmark-diff"></i><span class="side-menu__label">Admission</span><i class="angle fe fe-chevron-right"></i></a>
+            <ul class="slide-menu">
+                <li class="side-menu-label1"><a href="javascript:void(0)">Admission</a></li>
+                <li><a href="#" class="slide-item"> Add candidate profile</a></li>
+                <li><a href="#" class="slide-item"> Add candidate result</a></li>
+                <li><a href="#" class="slide-item"> View candidate profile</a></li>
+                <li><a href="#" class="slide-item"> View candidate results</a></li>
+                <br>
+                <p class="sidebar-info text-gray">
+                    <i class="bi bi-info-circle-fill"></i> INFO<br>
+                    Record candidates admission profile and results.<br>
+                    View candidates admission profile and results.<br>
+                    
+                    
+                </p>
+            </ul>
+           
+        </li>
+        <!-- ADMISSION ENDS HERE-->
+
+
+           <!-- HOSTEL ACCOMODATION-->
+           <li class="slide">
+            <a class="side-menu__item" data-bs-toggle="slide" href="javascript:void(0)"><i class="side-menu__icon bi bi-buildings"></i><span class="side-menu__label">Hostel Accomodation</span><i class="angle fe fe-chevron-right"></i></a>
+            <ul class="slide-menu">
+                <li class="side-menu-label1"><a href="javascript:void(0)">Hostel Accomodation</a></li>
+                <li><a href="#" class="slide-item"> Add new hostel</a></li>
+                <li><a href="#" class="slide-item"> View hostel</a></li>
+                <br>
+                <p class="sidebar-info text-gray">
+                    <i class="bi bi-info-circle-fill"></i> INFO<br>
+                    Record students hostel/accomodations.<br>
+                    View students hostel/accomodations. 
+                </p>
+            </ul>
+           
+        </li>
+        <!-- HOSTEL ACCOMODATION ENDS HERE-->
+     
+        
+             <!-- PHOTO GALLARY-->
+             <li class="slide">
+                <a class="side-menu__item" data-bs-toggle="slide" href="javascript:void(0)"><i class="side-menu__icon bi bi-images"></i><span class="side-menu__label">Photo gallary</span><i class="angle fe fe-chevron-right"></i></a>
+                <ul class="slide-menu">
+                    <li class="side-menu-label1"><a href="javascript:void(0)">Photo gallary</a></li>
+                    <li><a href="#" class="slide-item"> Add new</a></li>
+                    <li><a href="#" class="slide-item"> View</a></li>
+                    <br>
+                    <p class="sidebar-info text-gray">
+                        <i class="bi bi-info-circle-fill"></i> INFO<br>
+                        Add photos to the portal photo gallery.<br>
+                        View photos of the portal photo gallery.
+                    </p>
+                </ul>
+               
+            </li>
+            <!-- PHOTO GALLARY ENDS HERE-->
+
+
+              <!-- TOOLS-->
+              <li class="slide">
+                <a class="side-menu__item" data-bs-toggle="slide" href="javascript:void(0)"><i class="side-menu__icon bi bi-tools"></i><span class="side-menu__label">Tools</span><i class="angle fe fe-chevron-right"></i></a>
+                <ul class="slide-menu">
+                    <li class="side-menu-label1"><a href="javascript:void(0)">Tools</a></li>
+                    <li><a href="#" class="slide-item"> Generate Transcript</a></li>
+                    <li><a href="#" class="slide-item"> Configure Theme</a></li>
+                    <li><a href="#" class="slide-item"> Configure School Info</a></li>
+                    <li><a href="#" class="slide-item"> Configure Mail</a></li>
+                    <li><a href="#" class="slide-item"> Manager Configuration</a></li>
+                    <li><a href="#" class="slide-item"> Result Sheet Settings</a></li>
+                    <li><a href="#" class="slide-item"> Success & Promotion Config</a></li>
+                    <li><a href="#" class="slide-item"> Technical Support</a></li>
+                    <li><a href="#" class="slide-item"> Plugins Panel</a></li>
+                    <br>
+                    <p class="sidebar-info text-gray">
+                        <i class="bi bi-info-circle-fill"></i> INFO<br>
+                        Generate student's transcript.<br>
+
+                        Choose the color theme to match school color brand.<br>
+                        
+                        Configure the appropriate info for the school.<br>
+                        
+                        Configure parameters to the school mail system settings.<br>
+                        
+                        Manage manager's information related to students results.<br>
+                        
+                        Configure and manage result sheet settings and technical support.<br>
+                        
+                        Setup configurations that determine students result performance.<br>
+                        
+                        Plugins to integrate to your websites.
+                    </p>
+                </ul>
+               
+            </li>
+            <!-- TOOLS ENDS HERE-->
+
+
+
+                <!-- CONSOLE-->
+                <li class="slide">
+                    <a class="side-menu__item" data-bs-toggle="slide" href="javascript:void(0)"><i class="side-menu__icon bi bi-shield"></i><span class="side-menu__label">Console</span><i class="angle fe fe-chevron-right"></i></a>
+                    <ul class="slide-menu">
+                        <li class="side-menu-label1"><a href="javascript:void(0)">Console</a></li>
+                        <li><a href="#" class="slide-item"> Uplaod studen's profile</a></li>
+                        <li><a href="#" class="slide-item"> Uplaod studen' photo profile</a></li>
+                        <li><a href="#" class="slide-item"> Uplaod termly/mock result</a></li>
+                        <li><a href="#" class="slide-item"> Uplaod admission profile</a></li>
+                        <li><a href="#" class="slide-item"> Uplaod admission results</a></li>
+                        <li><a href="#" class="slide-item"> Compute class/subject positions</a></li>
+                       
+                        <br>
+                        <p class="sidebar-info text-gray">
+                            <i class="bi bi-info-circle-fill"></i> INFO<br>
+                            Upload newly admitted students' profile.<br>
+
+                            Upload termly or mock result.<br>
+                            
+                            Upload admission profile.<br>
+                            
+                            Upload admission result.<br>
+                            
+                            Compute students' termly and cumulative result class and subject positions.
+                        </p>
+                    </ul>
+                   
+                </li>
+                <!-- CONSOLE ENDS HERE-->
+
+
+            
                            
                         </ul>
                         <div class="slide-right" id="slide-right"><svg xmlns="http://www.w3.org/2000/svg" fill="#7b8191" width="24" height="24" viewBox="0 0 24 24"><path d="M10.707 17.707 16.414 12l-5.707-5.707-1.414 1.414L13.586 12l-4.293 4.293z"/></svg></div>
@@ -592,7 +982,7 @@
             <div class="container">
                 <div class="row align-items-center flex-row-reverse">
                     <div class="col-md-12 col-sm-12 text-center">
-                        Copyright © <span id="year"></span> <a href="javascript:void(0)">School</a>. Designed with <span class="fa fa-heart text-danger"></span> by <a href="javascript:void(0)"> CssNinja </a> All rights reserved.
+                         ©Copyright <span id="year"></span> <a href="javascript:void(0)">Schooling</a>. Designed with <span class="fa fa-heart text-danger"></span> School management <a href="javascript:void(0)"> </a> All rights reserved.
                     </div>
                 </div>
             </div>

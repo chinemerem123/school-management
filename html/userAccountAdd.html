@@ -958,7 +958,8 @@
                         <!-- PAGE-HEADER END -->
 
                         <!-- ROW-1 OPEN -->
-                        <!-- Row -->
+
+                        <!-- User Account Page-->
 
                         <form>
                         <div class="row ">
@@ -990,26 +991,29 @@
                                 <div class="col-md-12 col-xl-6">
                                     <div class="form-group">
                                         <label class="form-label">Category</label>
-                                        <select name="category" class="form-control form-select" data-bs-placeholder="Select category">
+                                        <select name="category" class="form-control form-select" id="select-cate" data-bs-placeholder="Select category">
                                                 <option value="staff" >Staff</option>
                                                 <option value="principal" >Principal</option>
                                             </select>
                                             
                                     </div>
 
-                                    <a href="#" class=" sub-btn btn btn-primary mt-4 mb-0 p-2">Add New Category</a>
+                                    <a href="#" id="add-cate" class=" sub-btn btn btn-primary mt-4 mb-0 p-2">Add New Category</a>
 
-                                    <div class="form-group mt-3">
-                                        <label for="exampleInputName1" class="form-label">Add</label>
-                                        <input type="text" class="form-control p-3" id="exampleInputPassword1" placeholder=" Enter Name" autocomplete="new-password">
+                                    <div class="form-group mt-3" id="add-cate-box">
+                                        <label for="exampleInputName1" class="form-label">Add New Item</label>
+                                        <input type="text" class="form-control p-3" id="new-item" placeholder=" Enter" autocomplete="new item">
+
+                                        <a href="#" class=" sub-btn btn btn-primary mt-4 mb-0 p-2 " id="cate-add">Add </a>
                                     </div>
-                                    <a href="#" class=" sub-btn btn btn-primary mt-4 mb-0 p-2 ">Add </a>
+                                  
                                 </div>
                             
                         </div>
                         </form>
 
-                        <!-- /Row Ends here -->
+                        <!-- /User Account page Ends here -->
+
                     </div>
                     <!-- CONTAINER CLOSED -->
                 </div>
@@ -1075,7 +1079,8 @@
     <!-- Switcher js -->
     <script src="../assets/switcher/js/switcher.js"></script>
 
-  
+  <!-- Override Js-->
+  <script src="../assets/js/override.js"></script>
 
 </body>
 

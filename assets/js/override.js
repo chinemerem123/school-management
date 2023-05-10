@@ -21,9 +21,9 @@ btnAddcate.addEventListener("click",()=>{
 if( cateBox.style.display="block"){
 cateAdd.addEventListener("click",()=>{
 
-    let crateOption = document.createElement("option");
-    crateOption.text = cateNewItem.value;
-    selectCate.add(crateOption);
+    // let crateOption = document.createElement("option");
+    // crateOption.text = cateNewItem.value;
+    // selectCate.add(crateOption);
     cateBox.style.display="none";
     cateNewItem.value="";
 

@@ -947,7 +947,7 @@
 
                         <!-- PAGE-HEADER -->
                         <div class="page-header">
-                            <h1 class="page-title">User Account</h1>
+                            <h1 class="page-title">User Account List</h1>
                             <div>
                                 <ol class="breadcrumb">
                                     <li class="breadcrumb-item"><a href="javascript:void(0)">Pages</a></li>
@@ -957,16 +957,104 @@
                         </div>
                         <!-- PAGE-HEADER END -->
 
-                        <!-- ROW-1 OPEN -->
-                        <!-- Row -->
-
+                       
+                        <!-- Row 1 filter-->
                         <div class="row ">
                             <div class="col-md-12">
-                                Waiting to start
+                              <div class="card p-4">
+                                <div class="row">
+                                    <!-- Stor by Alphabet-->
+                                <div class="col-md-5 col-sm-12 ">
+                                    <div class="h4">Sort by:</div>
+                                    <div class="row">
+                                        <div class="col-xl-4 col-sm-12 mt-md-0 mt-2">
+                                            <select name="category" class="form-control form-select"  data-bs-placeholder="Select category">
+                                            <option value="" >Select</option>
+                                            <option value="username" >Username Alphabetically</option>
+                                            <option value="name" >Name Alphabetically</option>
+                                        </select></div>
+                                        <div class="col-xl-4 col-sm-12 mt-md-0 mt-2">
+                                            <select name="category" class="form-control form-select " data-bs-placeholder="Select category">
+                                                <option value="ascenidng" >Ascending</option>
+                                                <option value="descending" >Descending</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-xl-4 col-sm-12 mt-md-0 mt-2">
+                                            <button  class=" sub-btn btn btn-primary mb-0 w-100">Get now</button>
+                                        </div>
+                                    </div>
+                                    
+
+                                  
+                                    
+                                </div>
+                                <!-- Stor by Alphabet Ends here-->
+
+                                <!--Or break-->
+                                <div class="col-md-1 col-sm-12 p-3 text-center">
+                                    <div class="h5 mt-md-5 fw-bold">Or</div>
+                                </div>
+                                <!--Or break Ends here-->
+
+                                   <!-- Choose Username-->
+                                   <div class="col-md-5 col-sm-12 ">
+                                    <div class="h4">Choose Username:</div>
+                                    <div class="row">
+                                        <div class="col-xl-8 col-sm-12 mt-md-0 mt-2">
+                                            <select name="category" class="form-control form-select"  data-bs-placeholder="Select category">
+                                            <option value="" >Select</option>
+                                            <option value="username" >Chimaobi John</option>
+                                            <option value="name" >Nnaji Christian</option>
+                                        </select></div>
+
+                                        <div class="col-xl-4 col-sm-12 mt-md-0 mt-2">
+                                            <button  class=" sub-btn btn btn-primary mb-0 w-100">Get now</button>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                <!-- Choose Username Ends here-->
+
+                                </div>
+                              </div>
                             </div>
                         </div>
+                        <!-- /Row 1 filter Ends here -->
 
-                        <!-- /Row Ends here -->
+
+                        <!-- Row 2 Tables-->
+                        <div class="card">
+                           
+                            <div class="card-body">
+                                <div class="table-responsive">
+                                    <table class="table table-bordered text-nowrap border-bottom" id="basic-datatable">
+                                        <thead>
+                                            <tr>
+                                                <th class="wd-15p border-bottom-0">Username</th>
+                                                <th class="wd-15p border-bottom-0">Name</th>
+                                                <th class="wd-20p border-bottom-0">Permission</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Bella</td>
+                                                <td>Chloe Bella</td>
+                                                <td><a href="userAccountPermission.html" class="btn btn-gray text-white">View/Edit Permission</a></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Donna</td>
+                                                <td>Bond Donna</td>
+                                                <td><a href="userAccountPermission.html" class="btn btn-gray text-white">View/Edit Permission</a></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                         <!-- Row 2 Tables Ends here-->
+
+
+
                     </div>
                     <!-- CONTAINER CLOSED -->
                 </div>
@@ -1014,6 +1102,21 @@
 
     <!-- SIDEBAR JS -->
     <script src="../assets/plugins/sidebar/sidebar.js"></script>
+
+     <!-- DATA TABLE JS-->
+     <script src="../assets/plugins/datatable/js/jquery.dataTables.min.js"></script>
+     <script src="../assets/plugins/datatable/js/dataTables.bootstrap5.js"></script>
+     <script src="../assets/plugins/datatable/js/dataTables.buttons.min.js"></script>
+     <script src="../assets/plugins/datatable/js/buttons.bootstrap5.min.js"></script>
+     <script src="../assets/plugins/datatable/js/jszip.min.js"></script>
+     <script src="../assets/plugins/datatable/pdfmake/pdfmake.min.js"></script>
+     <script src="../assets/plugins/datatable/pdfmake/vfs_fonts.js"></script>
+     <script src="../assets/plugins/datatable/js/buttons.html5.min.js"></script>
+     <script src="../assets/plugins/datatable/js/buttons.print.min.js"></script>
+     <script src="../assets/plugins/datatable/js/buttons.colVis.min.js"></script>
+     <script src="../assets/plugins/datatable/dataTables.responsive.min.js"></script>
+     <script src="../assets/plugins/datatable/responsive.bootstrap5.min.js"></script>
+     <script src="../assets/js/table-data.js"></script>
 
     <!-- Perfect SCROLLBAR JS-->
     <script src="../assets/plugins/p-scroll/perfect-scrollbar.js"></script>

@@ -44,8 +44,7 @@
 
 <body class="app sidebar-mini ltr">
 
-    <!-- data-bs-toggle="sidebar-right" data-target=".sidebar-right" -->
-
+   
     <!-- Switcher -->
     <div class="switcher-wrapper">
         <div class="demo_changer">
@@ -968,7 +967,8 @@
                                         <div class="col-md-6 col-sm-12">
                                             <div class="form-group">
                                                 <label for="regnum" class="form-label">Registration Number</label>
-                                                <input type="text" class="form-control p-3" id="regnum" placeholder="Enter Reg Number">
+                                                <input type="text" class="form-control p-3" id="regnum"  data-bs-toggle="sidebar-right" data-target=".sidebar-right"
+                                                placeholder="Enter Reg Number">
                                             </div>
                                         </div>
 
@@ -990,7 +990,7 @@
                         <div class="row mt-3">
                             <div class="col-xl-4 col-md-12 col-sm-12">
                                 <div class="h5 fw-bold">Biometric Information:</div>
-                                
+
                             </div>
                         </div>
                        </div>
@@ -1007,7 +1007,10 @@
 
         <!-- Sidebar-right -->
         <div class="sidebar sidebar-right sidebar-animate">
-           
+           <div class="d-flex p-3">
+            <input type="text" class="form-control" placeholder="Enetr Reg Number">
+            <button class="btn btn-primary">Search</button>
+           </div>
         </div>
         <!--/Sidebar-right-->
 

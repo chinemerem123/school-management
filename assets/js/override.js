@@ -33,3 +33,11 @@ cateAdd.addEventListener("click",()=>{
 //=========================================================
 //User account page adding new category input box ends here
 //=========================================================
+
+
+function toggle(source) {
+    checkboxes = document.getElementsByName('foo');
+    for(var i=0, n=checkboxes.length;i<n;i++) {
+      checkboxes[i].checked = source.checked;
+    }
+  }

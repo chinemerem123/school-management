@@ -1032,12 +1032,12 @@
                                         </thead>
                                         <tbody>
                                             <tr>
-                                                <td><a href=""  class="btn btn-gray"> Bella</a></td>
+                                                <td><a data-bs-effect="effect-slide-in-bottom" data-bs-toggle="modal" href="#modaldemo8"  class="btn btn-gray"> Bella</a></td>
                                                 <td>Chloe Bella</td>
                                                 <td><a href="userAccountPermission.html" class="btn btn-gray text-white">View/Edit Permission</a></td>
                                             </tr>
                                             <tr>
-                                                <td><a href=""  class="btn btn-gray">Donna</a></td>
+                                                <td><a data-bs-effect="effect-slide-in-bottom" data-bs-toggle="modal" href="#modaldemo8"  class="btn btn-gray">Donna</a></td>
                                                 <td>Bond Donna</td>
                                                 <td><a href="userAccountPermission.html" class="btn btn-gray text-white">View/Edit Permission</a></td>
                                             </tr>
@@ -1077,6 +1077,56 @@
         </footer>
         <!-- FOOTER CLOSED -->
     </div>
+
+
+    <!-- MODAL FOR VIEWING USER ACCOUNT INFO -->
+    <div class="modal fade" id="modaldemo8">
+        <div class="modal-dialog modal-dialog-centered text-center" role="document">
+            <div class="modal-content modal-content-demo">
+                <div class="modal-header">
+                    <h6 class="modal-title"> <a href="/html/userAccountAdd.html" class="btn btn-danger">Edit</a></h6><button aria-label="Close" class="btn-close" data-bs-dismiss="modal"><span aria-hidden="true">&times;</span></button>
+                </div>
+                <div class="modal-body">
+                    <div class="text-md-left">
+                   <img src="/assets/images/users/1.jpg" width="80" class="br-5" alt="">
+                   <br><br>
+                   <div class="h4 fw-bold">Account Information</div>
+
+                   <div class="info d-flex">
+                    <div class="info-det fw-bold">Username:</div>
+                    <div class="info-value ms-2">CICS/2020/006</div>
+                   </div>
+
+                   <div class="info d-flex mt-2">
+                    <div class="info-det fw-bold">Password:</div>
+                    <div class="info-value ms-2">admin@00</div>
+                   </div>
+
+                   <div class="info d-flex mt-2">
+                    <div class="info-det fw-bold">Name:</div>
+                    <div class="info-value ms-2">Nnaji Christian</div>
+                   </div>
+
+                   <div class="info d-flex mt-2">
+                    <div class="info-det fw-bold">Category:</div>
+                    <div class="info-value ms-2">Staff</div>
+                   </div>
+
+                   <div class="info d-flex mt-2">
+                    <div class="info-det fw-bold">Status:</div>
+                    <div class="info-value ms-2 text-success">Active</div>
+                   </div>
+
+                </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-primary">Modify</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- MODAL FOR VIEWING USER ACCOUNT INFO ENDS HERE-->
+
 
     <!-- BACK-TO-TOP -->
     <a href="#top" id="back-to-top"><i class="fa fa-angle-up"></i></a>

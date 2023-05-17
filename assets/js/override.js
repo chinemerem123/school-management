@@ -1,3 +1,10 @@
+
+document.getElementById("user-modify").addEventListener("click",()=>{
+    document.getElementById('info').classList.toggle('show');
+})
+
+
+
 //===============================================
 //User account page adding new category input box
 //===============================================
@@ -40,10 +47,6 @@ function toggle(source) {
     for(var i=0, n=checkboxes.length;i<n;i++) {
       checkboxes[i].checked = source.checked;
     }
-  }
-
-
-<<<<<<< Updated upstream
+  };
  
-=======
->>>>>>> Stashed changes
+ 

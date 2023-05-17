@@ -958,7 +958,58 @@
                         <div class="container-fluid">
                             <button class="btn btn-primary mt-md-0 mt-sm-3" id="tog-batch"><i class="bi bi-plus"></i> Batch Re-assign class</button>
 
-                            <div class="tab1 mt-4 card p-4">
+                        
+
+                        <div class="tab2 mt-4 card p-4 hide" id="tab2">
+                            <div class="d-flex flex-column flex-md-row">
+                                
+                                <div class="form-group flex-column ">
+                                    <label for="level" class="from-lable">Level</label>
+                                    <select name="level" class="form-control form-select" id="level" data-bs-placeholder="Select level">
+                                            <option value="" >-Select-</option>
+                                            <option value="Junior Secondary" >Junior Secondary</option>
+                                        </select>
+                                        
+                                </div>
+
+                                <div class="form-group flex-column ms-md-2">
+                                    <label for="session" class="from-lable">Session</label>
+                                    <select name="session" class="form-control form-select" id="session" data-bs-placeholder="Select session">
+                                            <option value="" >-Select-</option>
+                                            <option value="2020/2021" >2020/2021</option>
+                                            <option value="2021/2022" >2021/2022</option>
+                                            <option value="2022/2023" >2022/2023</option>
+                                        </select>
+                                        
+                                </div>
+
+
+                                <div class="form-group flex-column ms-md-2">
+                                    <label for="category" class="from-lable">Category	</label>
+                                    <select name="category" class="form-control form-select" id="category" data-bs-placeholder="Select category">
+                                            <option value="" >-Select-</option>
+                                            <option value="one" >one</option>
+                                            <option value="two" >two</option>
+                                             <option value="three" >three</option>
+                                             <option value="four" >four</option>
+                                             <option value="five" >five</option>
+                                              <option value="six" >six</option>
+                                              <option value="seven" >seven</option>
+                                              <option value="eight" >eight</option>
+                                               <option value="nine" >nine</option>
+
+                                        </select>
+                                        
+                                </div>
+
+                                <div class="form-group flex-column ms-md-2 p-md-5">
+                                    <button class="btn btn-primary mt-1">Get now</button>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="tab1 mt-4 card p-4 show1" id="tab1">
                             <div class="h5 fw-bold ">Export As:</div>
                             <div class="export d-flex">
                             <a href="#" class="bg-danger br-5 p-1"><i class="bi bi-file-pdf-fill text-white"></i></a>
@@ -1039,54 +1090,94 @@
                         </div>
                         </div>
 
-                        <div class="tab2 mt-4 card p-4">
-                            <div class="d-flex flex-column flex-md-row">
-                                
-                                <div class="form-group flex-column ">
-                                    <label for="level" class="from-lable">Level</label>
-                                    <select name="level" class="form-control form-select" id="level" data-bs-placeholder="Select level">
-                                            <option value="" >-Select-</option>
-                                            <option value="Junior Secondary" >Junior Secondary</option>
-                                        </select>
-                                        
+                        
+                        <!-- Row 2 Tables-->
+                        <div class="card">
+                           
+                            <div class="card-body">
+                                <div class="table-responsive">
+                                    <table class="table table-bordered text-nowrap border-bottom" id="basic-datatable">
+                                        <thead>
+                                            <tr>
+                                                <th class="wd-15p border-bottom-0">Class</th>
+                                                <th class="wd-15p border-bottom-0">Level</th>
+                                                <th class="wd-20p border-bottom-0">Session</th>
+                                                <th class="wd-15p border-bottom-0">Term</th>
+                                                <th class="wd-20p border-bottom-0">No. of Student</th>
+
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td><a href="#"  class="btn btn-gray"> JS1 DIAMOND</a></td>
+                                                <td>Junior Secondary</td>
+                                                <td>2020/2021</td>
+                                                <td>Second Term</td>
+                                                <td>23</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td><a href="#"  class="btn btn-gray"> JS1 DIAMOND</a></td>
+                                                <td>Junior Secondary</td>
+                                                <td>2020/2021</td>
+                                                <td>First Term</td>
+                                                <td>22</td>
+                                            </tr>
+                                            
+                                        </tbody>
+                                    </table>
                                 </div>
-
-                                <div class="form-group flex-column ms-md-2">
-                                    <label for="session" class="from-lable">Session</label>
-                                    <select name="session" class="form-control form-select" id="session" data-bs-placeholder="Select session">
-                                            <option value="" >-Select-</option>
-                                            <option value="2020/2021" >2020/2021</option>
-                                            <option value="2021/2022" >2021/2022</option>
-                                            <option value="2022/2023" >2022/2023</option>
-                                        </select>
-                                        
-                                </div>
-
-
-                                <div class="form-group flex-column ms-md-2">
-                                    <label for="category" class="from-lable">Category	</label>
-                                    <select name="category" class="form-control form-select" id="category" data-bs-placeholder="Select category">
-                                            <option value="" >-Select-</option>
-                                            <option value="one" >one</option>
-                                            <option value="two" >two</option>
-                                             <option value="three" >three</option>
-                                             <option value="four" >four</option>
-                                             <option value="five" >five</option>
-                                              <option value="six" >six</option>
-                                              <option value="seven" >seven</option>
-                                              <option value="eight" >eight</option>
-                                               <option value="nine" >nine</option>
-
-                                        </select>
-                                        
-                                </div>
-
-                                <div class="form-group flex-column ms-md-2 p-md-5">
-                                    <button class="btn btn-primary mt-1">Get now</button>
-                                </div>
-
                             </div>
                         </div>
+                         <!-- Row 2 Tables Ends here-->
+
+
+                          <!-- Row 3 Tables-->
+                          <div class="card">
+                           
+                            <div class="card-body">
+                                <div class="table-responsive">
+                                    <table class="table table-bordered text-nowrap border-bottom" id="basic-datatable">
+                                        <thead>
+                                            <tr>
+                                                <th class="wd-15p border-bottom-0">S/N</th>
+                                                <th class="wd-15p border-bottom-0"></th>
+                                                <th class="wd-15p border-bottom-0">Registration No:</th>
+                                                <th class="wd-15p border-bottom-0">Name</th>
+                                                <th class="wd-15p border-bottom-0">Gender</th>
+                                                <th class="wd-20p border-bottom-0">Previous Class(es)</th>
+                                                <th class="wd-20p border-bottom-0">Promotion Status</th>
+
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="text-center">1</td>
+                                                <td class="text-center"><img src="/assets/images/users/10.jpg" width="50" alt=""></td>
+                                                <td class="text-center"><a href="#"  class="btn btn-gray"> CICS/2021/076</a></td>
+                                                <td class="text-center">Nnaji Christian Chinemerem</td>
+                                                <td class="text-center"><img src="/assets/images/faces/icons8-boy-100.png" width="30" alt=""></td>
+                                                <td class="text-center">  
+                                                    <div class=" table-scroll">
+                                                        <button class="btn btn-gray" data-bs-placement="bottom" data-bs-toggle="tooltip" title="Junior Secondary, 2020/2021 - First term">JS1 PLATINUM</button>
+                                                    <button class="btn btn-gray" data-bs-placement="bottom" data-bs-toggle="tooltip" title="Junior Secondary, 2020/2021 - Second term">JS1 PLATINUM</button>
+                                                    <button class="btn btn-gray" data-bs-placement="bottom" data-bs-toggle="tooltip" title="Junior Secondary, 2020/2021 - Thired term">JS2 PLATINUM</button>
+                                                    <button class="btn btn-gray" data-bs-placement="bottom" data-bs-toggle="tooltip" title="Junior Secondary, 2020/2021 - First term">JS2 PLATINUM</button>
+                                                    </div>
+                                                    
+                                                </td>
+                                                <td class="text-center text-success">Promoted</td>
+                                            </tr>
+
+                                          
+                                            
+                                        </tbody>
+                                    </table>
+
+                                </div>
+                            </div>
+                        </div>
+                            <!-- Row 3 Tables Ends here-->
 
                             </div>
 
@@ -1100,6 +1191,8 @@
             </div>
             <!--app-content closed-->
         </div>
+
+
   <!-- Sidebar-right -->
   <div class="sidebar sidebar-right sidebar-animate">
     <div class="d-flex p-3">
@@ -1178,6 +1271,34 @@
 
     <script src="../assets/js/override.js"></script>
 
+    <!-- Tooltip and Popover JS -->
+    <script src="../assets/js/tooltip&popover.js"></script>
+
+    <!-- DATA TABLE JS-->
+    <script src="../assets/plugins/datatable/js/jquery.dataTables.min.js"></script>
+    <script src="../assets/plugins/datatable/js/dataTables.bootstrap5.js"></script>
+    <script src="../assets/plugins/datatable/js/dataTables.buttons.min.js"></script>
+    <script src="../assets/plugins/datatable/js/buttons.bootstrap5.min.js"></script>
+    <script src="../assets/plugins/datatable/js/jszip.min.js"></script>
+    <script src="../assets/plugins/datatable/pdfmake/pdfmake.min.js"></script>
+    <script src="../assets/plugins/datatable/pdfmake/vfs_fonts.js"></script>
+    <script src="../assets/plugins/datatable/js/buttons.html5.min.js"></script>
+    <script src="../assets/plugins/datatable/js/buttons.print.min.js"></script>
+    <script src="../assets/plugins/datatable/js/buttons.colVis.min.js"></script>
+    <script src="../assets/plugins/datatable/dataTables.responsive.min.js"></script>
+    <script src="../assets/plugins/datatable/responsive.bootstrap5.min.js"></script>
+    <script src="../assets/js/table-data.js"></script>
+
+      <!-- Override js-->
+<script src="/assets/js/override.js"></script>
+
+<script>
+    document.getElementById("tog-batch").addEventListener("click",()=>{
+        document.getElementById('tab1').classList.toggle('hide');
+        document.getElementById('tab2').classList.toggle('show');
+})
+
+</script>
   
 
 </body>

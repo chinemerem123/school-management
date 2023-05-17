@@ -2,15 +2,20 @@
   font-weight: bold;
 }
 
-<<<<<<< Updated upstream
 .none {
   display: none;
-=======
+}
+
 .hide {
   display: none;
 }
 
 .show {
   display: flex;
->>>>>>> Stashed changes
+}
+
+.table-scroll {
+  width: 220px;
+  position: relative;
+  overflow-x: scroll;
 }/*# sourceMappingURL=override.css.map */

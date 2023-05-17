@@ -1117,10 +1117,22 @@
                     <div class="info-value ms-2 text-success">Active</div>
                    </div>
 
+                   <div class="info  mt-2 hide" id="info">
+                    <select name="status" class="form-control form-select"  data-bs-placeholder="Select status">
+                        <option value="Active" >Active</option>
+                        <option value="Suspend" >Suspend</option>
+                        <option value="Block" >Block</option>
+                    </select>
+
+                    <button class="btn btn-gray ms-3" >Upadate</button>
+                  
+                   </div>
+
+                 
                 </div>
                 </div>
                 <div class="modal-footer">
-                    <button class="btn btn-primary">Modify</button>
+                    <button class="btn btn-primary" id="user-modify">Modify</button>
                 </div>
             </div>
         </div>
@@ -1180,6 +1192,14 @@
     <!-- Switcher js -->
     <script src="../assets/switcher/js/switcher.js"></script>
 
+    <!-- Override js-->
+<script src="/assets/js/override.js"></script>
+
+<script>
+    document.getElementById("user-modify").addEventListener("click",()=>{
+        document.getElementById('info').classList.toggle('show');
+})
+</script>
   
 
 </body>

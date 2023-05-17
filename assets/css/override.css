@@ -2,6 +2,15 @@
   font-weight: bold;
 }
 
+<<<<<<< Updated upstream
 .none {
   display: none;
+=======
+.hide {
+  display: none;
+}
+
+.show {
+  display: flex;
+>>>>>>> Stashed changes
 }/*# sourceMappingURL=override.css.map */

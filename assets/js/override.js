@@ -43,4 +43,7 @@ function toggle(source) {
   }
 
 
+<<<<<<< Updated upstream
  
+=======
+>>>>>>> Stashed changes

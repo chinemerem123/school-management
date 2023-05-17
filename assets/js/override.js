@@ -1,10 +1,63 @@
 let assign=document.getElementById("assign");
-let assignChange=document.querySelector(".assign");
-let oneForAll=document.getElementById("one-for-all");
+let change=document.getElementById("change");
+let del=document.getElementById("del");
+let oneForAll=document.getElementById('one-for-all');
+let dele=document.getElementById("dele");
+let sms=document.getElementById("sms");
 
-assign.addEventListener("click",()=>{
-   
+assign.addEventListener('click',()=>{
+    document.getElementById('assign-change').style.display="block";
+    document.getElementById('one-for-all').style.display="none";
+    
 })
+
+document.getElementById("close").addEventListener('click',()=>{
+    document.getElementById('assign-change').style.display="none";
+    oneForAll.style.display="block";
+})
+
+
+
+change.addEventListener('click',()=>{
+    document.getElementById('change-box').style.display="block";
+    oneForAll.style.display="none";
+    
+})
+
+document.getElementById("close3").addEventListener('click',()=>{
+    document.getElementById('change-box').style.display="none";
+    oneForAll.style.display="block";
+})
+
+
+
+document.getElementById("close2").addEventListener('click',()=>{
+    oneForAll.style.display="flex";
+    dele.style.display="none";
+})
+
+
+del.addEventListener('click',()=>{
+    dele.style.display="block";
+    oneForAll.style.display="none";
+})
+
+
+sms.addEventListener('click',()=>{
+    document.getElementById('sms-send').style.display="block";
+    oneForAll.style.display="none";
+    
+})
+
+document.getElementById("close4").addEventListener('click',()=>{
+    oneForAll.style.display="flex";
+    document.getElementById('sms-send').style.display="none";
+})
+
+
+// assign.addEventListener("click",()=>{
+//    change.style.display="block";
+// })
 
 
 

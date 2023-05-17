@@ -14,12 +14,12 @@
   display: flex;
 }
 
+.show1 {
+  display: block;
+}
+
 .table-scroll {
   width: 220px;
   position: relative;
   overflow-x: scroll;
-}
-
-.assign-change {
-  display: none;
 }/*# sourceMappingURL=override.css.map */

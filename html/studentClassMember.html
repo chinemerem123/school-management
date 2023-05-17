@@ -956,22 +956,25 @@
                        
                         <!-- Row1 -->
 
-                        <div class="d-flex gap-2 flex-md-row flex-column">
+                        <div class=" gap-2 flex-md-row flex-column">
                             <a href="/html/studentInfoView.html" class="btn btn-primary">Student List</a>
                             <a href="/html/studentInfoPhoto.html" class="btn btn-primary">Student Photo Album</a>
                             <a href="/html/studentInfoClassList.html" class="btn btn-primary">Student Classes</a>
                         </div>
 
                         <div class="card  p-2 mt-3 ">
-                            <div class="d-flex gap-2 flex-md-row flex-column bg-light p-3" id="one-for-all">
+                            <div class=" gap-2 flex-md-row flex-column bg-light p-3 show" id="one-for-all">
                                 <button class="btn btn-gray" id="assign">Assign New Class</button>
                                 <button class="btn btn-gray" id="change">Change to Another Class</button>
                                 <button class="btn btn-gray" id="del">Delete Student(s) from this class</button>
-                                <button class="btn btn-gray" id="send-sms">Send SMS to Parents/Guardians</button>
+                                <button class="btn btn-gray" id="sms">Send SMS to Parents/Guardians</button>
                             </div>
 
-                            <div class="assign p-2" id="assign-change">
+                            <!-- assign and change class-->
+
+                            <div class=" hide assign p-2" id="assign-change">
                                 <div class="h4 fw-bold mt-3">Assign new class to</div>
+
                                 <div class="d-flex gap-2 flex-md-row flex-column">
                                     <div class="form-group flex-column ">
                                         <label for="level" class="from-lable">Level</label>
@@ -1020,11 +1023,112 @@
                                     </div>
     
                                     <div class="form-group flex-column ms-md-2 p-md-5">
-                                        <button class="btn btn-primary mt-1">Get now</button>
-                                        <button class="btn btn-gray mt-1">Close</button>
+                                        <button class="btn btn-primary mt-1">Continue to Assign</button>
+                                        <button class="btn btn-gray mt-1" id="close">Close</button>
                                     </div>
                                 </div>
+
+                                <label class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" onClick="toggle(this)" >
+                                    <span class="custom-control-label">Check All</span>
+                                </label>
                             </div>
+                             <!-- assign and change class ends here-->
+
+                                <!-- assign and change class-->
+
+                            <div class=" hide change p-2" id="change-box">
+                                <div class="h4 fw-bold mt-3">Change class to</div>
+
+                                <div class="d-flex gap-2 flex-md-row flex-column">
+                                    <div class="form-group flex-column ">
+                                        <label for="level" class="from-lable">Level</label>
+                                        <select name="level" class="form-control form-select" id="level" data-bs-placeholder="Select level">
+                                                <option value="" >-Select-</option>
+                                                <option value="Junior Secondary" >Junior Secondary</option>
+                                            </select>
+                                            
+                                    </div>
+    
+                                    <div class="form-group flex-column ms-md-2">
+                                        <label for="session" class="from-lable">Session</label>
+                                        <select name="session" class="form-control form-select" id="session" data-bs-placeholder="Select session">
+                                                <option value="" >-Select-</option>
+                                                <option value="2020/2021" >2020/2021</option>
+                                                <option value="2021/2022" >2021/2022</option>
+                                                <option value="2022/2023" >2022/2023</option>
+                                            </select>
+                                            
+                                    </div>
+    
+    
+                                    <div class="form-group flex-column ms-md-2">
+                                        <label for="term" class="from-lable">Term	</label>
+                                        <select name="term" class="form-control form-select" id="term" data-bs-placeholder="Select term">
+                                                <option value="" >-Select-</option>
+                                                <option value="First term" >First term</option>
+                                                <option value="Second term" >Second term</option>
+                                                 <option value="Third term" >Third term</option>
+                                            </select>
+                                            
+                                    </div>
+    
+                                    <div class="form-group flex-column ms-md-2">
+                                        <label for="class" class="from-lable">Class</label>
+                                        <select name="class" class="form-control form-select" id="class" data-bs-placeholder="Select class">
+                                                <option value="" >-Select-</option>
+                                                <option value="JS1 DIAMOND" >JS1 DIAMOND</option>
+                                                <option value="JS1 PLATINUM" >JS1 PLATINUM</option>
+                                                <option value="JS2 DIAMOND" >JS2 DIAMOND</option>
+                                                <option value="JS2 PLATINUM" >JS2 PLATINUM</option>
+                                                <option value="JS3 DIAMOND" >JS3 DIAMOND</option>
+                                                <option value="JS3 PLATINUM" >JS3 PLATINUM</option>
+                                            </select>
+                                            
+                                    </div>
+    
+                                    <div class="form-group flex-column ms-md-2 p-md-5">
+                                        <button class="btn btn-primary mt-1">Continue to Change</button>
+                                        <button class="btn btn-gray mt-1" id="close3">Close</button>
+                                    </div>
+                                </div>
+
+                                <label class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" onClick="toggle(this)" >
+                                    <span class="custom-control-label">Check All</span>
+                                </label>
+                            </div>
+                             <!-- assign and change class ends here-->
+
+                            <!-- Delet student list-->
+                            <div class=" hide p-2 " id="dele">
+                                <div class="d-flex gap-2">
+                                    <button class="btn btn-danger">Delect now</button>
+                                    <button class="btn btn-gray" id="close2">Close</button>
+                                </div>
+
+                                <label class="custom-control custom-checkbox mt-2">
+                                    <input type="checkbox" class="custom-control-input" onClick="toggle(this)" >
+                                    <span class="custom-control-label">Check All</span>
+                                </label>
+
+                            </div>
+                              <!-- Delet student list ends here-->
+
+                                 <!-- Send Sms student list-->
+                            <div class=" hide p-2 " id="sms-send">
+                                <div class="d-flex gap-2">
+                                    <button class="btn btn-success">Send SMS now</button>
+                                    <button class="btn btn-gray" id="close4">Close</button>
+                                </div>
+
+                                <label class="custom-control custom-checkbox mt-2">
+                                    <input type="checkbox" class="custom-control-input" onClick="toggle(this)" >
+                                    <span class="custom-control-label">Check All</span>
+                                </label>
+
+                            </div>
+                              <!-- Send Sms student list ends here-->
 
 
                             <div class="print mt-3">
@@ -1045,10 +1149,7 @@
                                             <tr>
                 
                                                 <th>
-                                                    <label class="custom-control custom-checkbox">
-                                                        <input type="checkbox" class="custom-control-input" onClick="toggle(this)" >
-                                                        <span class="custom-control-label"></span>
-                                                    </label>
+                                                 
                                             </th>
                                             <th></th>
                                             
@@ -1185,7 +1286,7 @@
     <!-- Override js-->
     <script src="/assets/js/override.js"></script>
 
-  
+
 
 </body>
 

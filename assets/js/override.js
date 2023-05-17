@@ -1,3 +1,12 @@
+let assign=document.getElementById("assign");
+let assignChange=document.querySelector(".assign");
+let oneForAll=document.getElementById("one-for-all");
+
+assign.addEventListener("click",()=>{
+   
+})
+
+
 
 document.getElementById("user-modify").addEventListener("click",()=>{
     document.getElementById('info').classList.toggle('show');
@@ -49,4 +58,6 @@ function toggle(source) {
     }
   };
  
- 
+ //=========================================================
+//=========================================================
+

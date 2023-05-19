@@ -1,3 +1,19 @@
+let addBehave=document.getElementById("add-behave");
+let behaveAdd=document.getElementById("behave-add");
+let addBehaveBox=document.getElementById("add-behave-box");
+
+addBehave.addEventListener("click",()=>{
+addBehaveBox.style.display="block";
+})
+
+behaveAdd.addEventListener("click",()=>{
+    addBehaveBox.style.display="none";
+    })
+
+
+
+
+
 let assign=document.getElementById("assign");
 let change=document.getElementById("change");
 let del=document.getElementById("del");

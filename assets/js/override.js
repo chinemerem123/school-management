@@ -1,3 +1,11 @@
+
+let remark=document.getElementById("remark");
+let remarkOpt=document.getElementById("remark-opt")
+
+remark.onclick = function(){
+    alert("hello");
+};
+
 let addBehave=document.getElementById("add-behave");
 let behaveAdd=document.getElementById("behave-add");
 let addBehaveBox=document.getElementById("add-behave-box");

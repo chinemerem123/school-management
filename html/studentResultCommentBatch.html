@@ -943,43 +943,25 @@
 
                         <!-- PAGE-HEADER -->
                         <div class="page-header">
-                            <h1 class="page-title">New Student Result Comment</h1>
+                            <h1 class="page-title">New Batch Student Result Comment</h1>
                             <div>
                                 <ol class="breadcrumb">
                                     <li class="breadcrumb-item"><a href="javascript:void(0)">Pages</a></li>
-                                    <li class="breadcrumb-item active" aria-current="page">Result Comment</li>
+                                    <li class="breadcrumb-item active" aria-current="page">Student Result Comment</li>
                                 </ol>
                             </div>
                         </div>
                         <!-- PAGE-HEADER END -->
 
-                        <!-- ROW-1 OPEN -->
                         <!-- Row -->
 
-                     <div class="container-fluid">
-                        <a href="studentResultCommentBatch.html" class="btn btn-primary mt-md-0 mt-sm-3" id="tog-batch"><i class="bi bi-plus"></i> Batch Operation</a>
+                       <div class="container-fluid">
+                        <a href="StudentResultAddComment.html" class="btn btn-primary mt-md-0 mt-sm-3" id="tog-batch"><i class="bi bi-plus"></i> Single Operation</a>
 
-                        <div class="card p-3 mt-4">
-                            <form action="">
-                                        <!-- Registeration section-->
-                                        <div class="row">
-                                            <div class="col-md-12 col-xl-6">
-                                                <div class="form-group">
-                                                    <label for="regnum" class="form-label">Registration Number</label>
-                                                    <input type="text" class="form-control p-3 input-txt-regno" id="regnum"  data-bs-toggle="sidebar-right" data-target=".sidebar-right"
-                                                    placeholder="Enter Reg Number">
-                                                </div>
-                                            </div>
-                                        </div>
-                                         <!-- Registeration section ends here-->
-
-                                             <!-- Section for select academic information-->
-                            <div class="card-header p-2">
-                                <div class="h5 fw-bold">Select Academic Information:</div>
-                            </div>
-
-                            <div class="card-body p-2">
-                                <div class="tab1 mt-5">
+                        <div class=" mt-4 card p-4 show1" id="tab1">
+                            <div class="h5 fw-bold">Select Academic Information:</div>
+        
+                                    <div class="tab1 mt-5">
                                     <div class="d-flex flex-column flex-md-row">
                                         
                                         <div class="form-group flex-column ">
@@ -1028,26 +1010,9 @@
                                                 
                                         </div>
         
-        
-                                    </div>
-        
-                                    
-                                </div>
-        
-                            </div>
-                              <!-- Section for select academic information ends here-->
-
-                              <div class="card-header p-2">
-                                <div class="h5 fw-bold">Enter Result Comment:</div>
-                            </div>
-
-                            <div class="card-body p-2">
-                                <div class="row">
-                                    <div class="col-xl-6">
-
-                                    <div class="form-group">
-                                        <label class="form-label">Select commenter</label>
-                                        <select name="commenter" class="form-control form-select" id="select-commenter" data-bs-placeholder="Select commenter">
+                                        <div class="form-group flex-column ms-md-2">
+                                            <label for="commentor" class="from-lable">Commentor</label>
+                                            <select name="commentor" class="form-control form-select" id="commentor" data-bs-placeholder="Select commentor">
                                                 <option value="" >-Select-</option>
                                                 <option value="Form Teacher" >Form Teacher</option>
                                                 <option value="Principal" >Principal</option>
@@ -1058,68 +1023,126 @@
                                                 <option value="Directress" >Directress</option>
                                                 <option value="Academic Officer" >Academic Officer</option>
                                                 <option value="Academic Dean of Studies" >Academic Dean of Studies</option>
-                                            </select>
-                                            
-                                    </div>
-
-                                    <div class="form-group">
-                                        <label for="commenter-name" class="form-label">Commenter Name</label>
-                                        <input type="text" class="form-control input-txt-regno" id="commenter-name">
-                                    </div>
-
-                                    <div class="form-group position-relative">
-                                        <label for="remark" class="form-label">Remark/Comment</label>
-                                    <textarea name="Notes" id="" class="form-control" id="remark"></textarea>
-
-                                    <div class="text-sugest card w-100 p-3 position-relative" id="remark-opt">
-                                        <div class="card-header p-2">
-                                            <button type="button" class="btn btn-danger float-right" id="remark-close"><i class="bi bi-x"></i></button>
+                                                </select>
+                                                
                                         </div>
-                                        <div class="card-body p-2 h-50 overflow-y-scroll overflow-x-hidden" >
-
-                                            <div class="row mt-2" id="remark-list">
-                                                <div class="col-9">
-                                                    Always making noise in the class.
-                                                </div>
-                                                <div class="col-3">
-                                                    <button class="btn btn-gray">Delete</button>
-                                                </div>
-                                            </div>
-
-                                       
-
-                                           
-                                        </div>
-                                        <div class="card-footer p-2 position-relative bottom-0">
-                                            <button type="button" class="btn btn-primary" id="add-com"><i class="bi bi-plus"></i> Add more comment</button>
-
-                                            <div class="form-group mt-3 " id="add-com-box">
-                                                <label for="exampleInputName1" class="form-label">Add New Item</label>
-                                                <input type="text" class="form-control p-3" id="new-item" placeholder=" Enter" autocomplete="new item">
         
-                                                <button type="button" class=" sub-btn btn btn-primary mt-4 mb-0 p-2 " id="com-add">Add</button>
-                                            </div>
-
-                                            </div>
-
-                                           
+                                    </div>
+        
+                                   <div class="row">
+                                    <div class="col-md-6 com-sm-12">
+                                        <div class="form-group ">
+                                            <label for="commenter-name" class="form-label">Commenter Name</label>
+                                            <input type="text" class="form-control input-txt-regno" id="commenter-name">
                                         </div>
-                                        <br>
-                                        <button class="btn btn-primary">submit Comment</button>
                                     </div>
+                                   </div>
 
+                                   <div class="note mt-3">
+                                    <p class=" mt-4">  <label class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" onClick="toggle(this)" >
+                                        <span class="custom-control-label fw-bold">enable Auto-Submit </span> 
+                                    </label> <br><span class="p-3 bg-gray text-white">Please note that Auto-submit is enabled, student result will be updated/replaced and not reversed.</span> </p>
+                                </div>
+                                <br>
+
+                                <button class="btn btn-primary">Get Class Record</button>
+                                <br>
+                                <div class="print-box mt-4">
+                                    <a href="#" class="btn btn-secondary"><bi class="bi bi-printer"></bi></a>
+                                </div>
+                                <br>
+        
+                                    <div class="submit-hint d-flex gap-3 flex-column flex-md-row mt">
+                                        <div class="submitting"><i class="bi bi-square-fill text-warning"></i> Submitting</div>
+                                        <div class="submitted"><i class="bi bi-square-fill text-success"></i> Successfully submitted</div>
+                                        <div class="error"><i class="bi bi-square-fill text-danger"></i> Error submitting</div>
+                                        <div class="Exceeding"><i class="bi bi-square-fill text-blue"></i> Exceeding limit</div>
+                                        <div class="Incomplete"><i class="bi bi-square-fill text-pink"></i> Incomplete entry</div>
                                     </div>
+                                    
+                                </div>
 
-                                  
-
+                                <div class="card-header p-2 mt-3">
+                                    <div class="h2 fw-bold">
+                                        Junior Secondary - 2020/2021 - First term - JS1 DIAMOND
                                     </div>
-                                    </div>
+                                  </div>
 
-                            </div>
-                                        </form>
-                        </div>
+                                  <div class="card-body p-2">
+                                    <form action="">
+                                      <div class="table-responsive">
+                                          <table class="table table-bordered text-nowrap border-bottom" id="basic-datatable">
+                                              <thead class="bg-gray text-white">
+                                                  <tr>
+                                                      <th></th>
+                                                      <th class="wd-15p border-bottom-0"></th>
+                                                      <th class="wd-15p border-bottom-0">Remark/Comment</th>
+          
+                                                  </tr>
+                                              </thead>
+                                              <tbody>
+          
+                                                  <tr class="">
+                                                      <td class="bg-gray text-white text-cntere">1</td>
+                                                      <td>ANENE, DIVINE CHUKWUNONSO</td>
+                                                      <td>
+                                                        <div class="form-group position-relative">
+                                                        <input type="text" class="form-control" name="comment" id="">
 
-                     </div>
+                                                        <div class="text-sugest card w-100 p-3 position-absolute" id="remark-opt">
+                                                            <div class="card-header p-2">
+                                                                <button type="button" class="btn btn-danger float-right" id="remark-close"><i class="bi bi-x"></i></button>
+                                                            </div>
+                                                            <div class="card-body p-2 h-50 overflow-y-scroll overflow-x-hidden" >
+                    
+                                                                <div class="row mt-2" id="remark-list">
+                                                                    <div class="col-9">
+                                                                        Always making noise in the class.
+                                                                    </div>
+                                                                    <div class="col-3">
+                                                                        <button class="btn btn-gray">Delete</button>
+                                                                    </div>
+                                                                </div>
+                    
+                                                           
+                    
+                                                               
+                                                            </div>
+                                                            <div class="card-footer p-2 position-relative bottom-0">
+                                                                <button type="button" class="btn btn-primary" id="add-com"><i class="bi bi-plus"></i> Add more comment</button>
+                    
+                                                                <div class="form-group mt-3 " id="add-com-box">
+                                                                    <label for="exampleInputName1" class="form-label">Add New Item</label>
+                                                                    <input type="text" class="form-control p-3" id="new-item" placeholder=" Enter" autocomplete="new item">
+                            
+                                                                    <button type="button" class=" sub-btn btn btn-primary mt-4 mb-0 p-2 " id="com-add">Add</button>
+                                                                </div>
+                    
+                                                                </div>
+                    
+                                                               
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    
+                                                  </tr>
+
+                                                  
+                                                
+                                               
+                                                  
+                                              </tbody>
+                                             
+                                          </table>
+                                      </div>
+                                    
+                                    </form>
+                                  </div>
+
+                                </div>
+                                </div>
+                       </div>
 
                         <!-- /Row Ends here -->
                     </div>
@@ -1220,10 +1243,8 @@
     <!-- Switcher js -->
     <script src="../assets/switcher/js/switcher.js"></script>
 
-    <script src="/assets/js/override.js"></script>
-
-    <script>
-        $('textarea[name=Notes]').click(function (e) {
+   <script>
+        $('input[name=comment]').click(function (e) {
             document.getElementById("remark-opt").style.display="block";
         });
 
@@ -1244,7 +1265,6 @@
 
     
     </script>
-  
 
 </body>
 

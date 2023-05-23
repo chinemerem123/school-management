@@ -22,4 +22,17 @@
   width: 220px;
   position: relative;
   overflow-x: scroll;
+}
+
+#add-com-box {
+  display: none;
+}
+
+#remark-opt {
+  display: none;
+  z-index: 1000;
+}
+
+#remark-list {
+  cursor: pointer;
 }/*# sourceMappingURL=override.css.map */

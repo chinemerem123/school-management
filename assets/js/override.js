@@ -1,3 +1,13 @@
+let addMoreSub=document.getElementById("add-more");
+let addSubBox=document.getElementById("add-subject-box");
+
+addMoreSub.addEventListener('click',()=>{
+   addSubBox.style.display="flex";
+})
+
+document.getElementById('addSub').addEventListener('click',()=>{
+    addSubBox.style.display="none";
+})
 
 let remark=document.getElementById("remark");
 let remarkOpt=document.getElementById("remark-opt")

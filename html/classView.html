@@ -960,7 +960,7 @@
                      <div class="container-fluid">
                         <div class="card p-4">
                            <div class="row">
-                            <div class="col-md-8 col-sm-12 d-md-flex">
+                            <div class="col-md-7 col-sm-12 d-md-flex">
                                 <div class="form-group flex-column ">
                                     <label for="level" class="from-lable">Level</label>
                                     <select name="level" class="form-control form-select" id="level" data-bs-placeholder="Select level">
@@ -990,13 +990,60 @@
                                 <button class="btn btn-primary">Get now</button>
                                 </div>
 
+                                <div class="or flex-column ms-md-6 mt-md-6">Or</div>
+
                             </div>
 
                            
-                            <div class="col-md-3 col-sm-12 d-md-flex">
-                               
+                            <div class="col-md-5 col-sm-12 d-md-flex">
+                                <div class="d-flex flex-column flex-md-row">
+                                    <div class="form-group">
+                                        <label for="level" class="from-lable">Registration Number</label>
+                                        <input type="text" class="form-control w-100 p-2 input-txt-regno" placeholder="Enter Reg no" id="regnum"  data-bs-toggle="sidebar-right" data-target=".sidebar-right">
+                                    </div>
+                                    <div class="form-group flex-column ms-md-2 p-md-5">
+                                        <button class="btn btn-primary mt-1">Get now</button>
+                                    </div>
+                                </div>
                             </div>
                            </div>
+
+                           <div class="print-box mt-4 d-flex">
+                            <a href="#" class="btn btn-secondary"><bi class="bi bi-printer"></bi></a>
+                            <button class="btn btn-primary ms-2">Delete Selected</button>
+                        </div>
+                          </div>
+
+                          <div class="card p-4">
+                            <div class="card-body">
+                                <div class="table-responsive">
+                                    <table class="table table-bordered text-nowrap border-bottom" id="basic-datatable">
+                                        <thead>
+                                            <tr>
+                                                <th class="wd-15p border-bottom-0">Class Name</th>
+                                                <th class="wd-15p border-bottom-0">Class Teacher</th>
+                                                <th class="wd-15p border-bottom-0">Subjects</th>
+                                                
+
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class=" d-flex"> <label class="custom-control custom-checkbox mt-2">
+                                                    <input type="checkbox" class="custom-control-input " name="foo"  value="option1" >
+                                                    <span class="custom-control-label"></span>
+                                                </label><a data-bs-effect="effect-slide-in-bottom" data-bs-toggle="modal" href="#" class="btn btn-gray"> JS1 DIAMOND</a></td>
+                                                <td >Anibuogu Mary</td>
+                                                <td>3 Subject</td>
+                                            </tr>
+
+                                          
+                                            
+                                        </tbody>
+                                    </table>
+
+                                </div>
+                            </div>
                           </div>
                      </div>
 

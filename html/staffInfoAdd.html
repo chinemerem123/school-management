@@ -942,11 +942,11 @@
 
                         <!-- PAGE-HEADER -->
                         <div class="page-header">
-                            <h1 class="page-title">Staff List</h1>
+                            <h1 class="page-title">New Staff Profile</h1>
                             <div>
                                 <ol class="breadcrumb">
                                     <li class="breadcrumb-item"><a href="javascript:void(0)">Pages</a></li>
-                                    <li class="breadcrumb-item active" aria-current="page">Staff List</li>
+                                    <li class="breadcrumb-item active" aria-current="page">Staff Profile</li>
                                 </ol>
                             </div>
                         </div>
@@ -968,9 +968,10 @@
 
                                         <div class="col-md-6 col-sm-12">
                                             <div class="form-group">
-                                                <label for="regnum" class="form-label">Registration Number</label>
-                                                <input type="text" class="form-control p-3 input-txt-regno" id="regnum"  data-bs-toggle="sidebar-right" data-target=".sidebar-right"
-                                                placeholder="Enter Reg Number">
+                                                <label for="regnum" class="form-label">Registration ID:</label>
+                                                <select name="session" class="form-control form-select" id="session" data-bs-placeholder="Select session">
+                                                    <option value="" >-Select-</option>
+                                                </select>
                                             </div>
                                         </div>
                                         
@@ -978,7 +979,7 @@
                                         <div class="col-md-6 col-sm-12">
                                             <div class="form-group ms-md-3">
                                                 <label for="regnum" class="form-label">Add Passport photo</label>
-                                                <input type="file" class="form-control p-3" id="regnum">
+                                                <input type="file" class="form-control" id="regnum">
                                             </div>
                                         </div>
 
@@ -1362,7 +1363,7 @@
                               <!--Col for parents/guardian/next of kin-->
                             <div class="col-xl-6 col-md-12 col-sm-12">
                                 <div class="card p-4 ">
-                                <div class="h5 fw-bold">Parents/Guardian/Next of Kin:</div>
+                                <div class="h5 fw-bold">Next of Kin:</div>
 
                                 <div class="mt-2 ">
                                     
@@ -1396,44 +1397,53 @@
                             <!-- Col for entrance/admission-->
                               <div class="col-xl-6 col-md-12 col-sm-12">
                                 <div class="card p-4 ">
-                                <div class="h5 fw-bold">Entrance/Admission:</div>
+                                <div class="h5 fw-bold">Appointment Information:</div>
 
                                 <div class="mt-2 ">
                                     
                                     <div class="form-group">
-                                        <label for="admission" class="form-label">Year of Admission</label>
-                                        <input type="text" class="form-control p-3" id="admission" placeholder=" Enter year" autocomplete="admission">
+                                        <label for="employment" class="form-label">Employment year</label>
+                                        <input type="text" class="form-control p-3" id="employment" placeholder=" Enter year" autocomplete="employment">
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="qualification" class="form-label">Qualification</label>
+                                        <input type="text" class="form-control p-3" id="qualification" placeholder=" Enter your qualification" autocomplete="qualification">
                                     </div>
 
                                        <div class="form-group">
-                                        <label for="type" class="from-lable">Admission Type</label>
-                                        <select name="type" class="form-control form-select" id="type" data-bs-placeholder="Select type">
+                                        <label for="type" class="from-lable">Department</label>
+                                        <select name="type" class="form-control form-select" id="type">
                                                 <option value="" >-Select-</option>
-                                                <option value="Boarding Student" >Boarding Student</option>
-                                                <option value="Day Student" >Day Student</option>
+                                                <option value="Science" >Science</option>
+                                                <option value="Art" >Art</option>
+                                                <option value="General" >General</option>
+                                                <option value="None" >None</option>
                                             </select>
                                             
                                     </div>
 
                                     <div class="form-group">
-                                        <label for="prev-school" class="form-label">Previous school attended (if any)</label>
-                                        <input type="text" class="form-control p-3" id="prev-school" placeholder="Enter prev school" autocomplete="prev-school">
+                                        <label for="prev-school" class="form-label">Subject(s) Held</label>
+                                        <input type="text" class="form-control p-3" id="sub-held" placeholder="Enter Subject">
                                     </div>
 
-                                    <div class="form-group">
-                                        <label for="type" class="from-lable">Status	</label>
-                                        <select name="status" class="form-control form-select" id="status" data-bs-placeholder="Select status">
-                                                <option value="" >-Select-</option>
-                                                <option value="Boarding Active" >Boarding Active</option>
-                                                <option value="Left" >Left</option>
-                                                <option value="Expelled" >Expelled</option>
-                                                <option value="Suspended" >Suspended</option>
-                                                <option value="Graduated" >Graduated</option>
-                                            </select>
-                                            
-                                    </div>
-
+                                  <div class="add-sub-btn">
+                                    <button type="button" class="btn btn-primary" id="add-sub"><i class="bi bi-plus"></i> Add</button>
+                                    <button type="button" class="btn btn-danger" id="clear-sub" data-bs-effect="effect-slide-in-bottom" data-bs-toggle="modal" data-bs-target="#modaldemo8"><i class="bi bi-dash"></i> Clear</button>
+                                  </div>
                                    
+                                  <div class="level mt-2" id="level-box">
+                                    <div class="form-group">
+                                        <label for="level" class="from-lable">Level</label>
+                                        <select name="level" class="form-control form-select" id="level" data-bs-placeholder="Select level">
+                                                <option value="" >-Select-</option>
+                                                <option value="Junior Secondary" >Junior Secondary</option>
+                                                <option value="Senior Secondary" >Senior Secondary</option>
+                                            </select>
+                                            
+                                    </div>
+                                  </div>
 
                                 </div>
                                 </div>
@@ -1467,34 +1477,11 @@
                                         <select name="level" class="form-control form-select" id="level" data-bs-placeholder="Select level">
                                                 <option value="" >-Select-</option>
                                                 <option value="Junior Secondary" >Junior Secondary</option>
+                                                <option value="Senior Secondary" >Senior Secondary</option>
                                             </select>
                                             
                                     </div>
 
-                                    <div class="form-group">
-                                        <label for="session" class="from-lable">Session</label>
-                                        <select name="session" class="form-control form-select" id="session" data-bs-placeholder="Select session">
-                                                <option value="" >-Select-</option>
-                                                <option value="2020/2021" >2020/2021</option>
-                                                <option value="2021/2022" >2021/2022</option>
-                                                <option value="2022/2023" >2022/2023</option>
-                                            </select>
-                                            
-                                    </div>
-
-                                      
-                                    <div class="form-group">
-                                        <label for="term" class="from-lable">Term	</label>
-                                        <select name="term" class="form-control form-select" id="term" data-bs-placeholder="Select term">
-                                                <option value="" >-Select-</option>
-                                                <option value="First term" >First term</option>
-                                                <option value="Second term" >Second term</option>
-                                                 <option value="Third term" >Third term</option>
-                                            </select>
-                                            
-                                    </div>
-
-                                  
 
                                     <div class="form-group">
                                         <label for="class" class="from-lable">Class</label>
@@ -1526,8 +1513,6 @@
                                         <thead>
                                             <tr>
                                                 <th>Level</th>
-                                                <th>Session</th>
-                                                <th>Term</th>
                                                 <th>Class</th>
                                             </tr>
                                         </thead>
@@ -1535,15 +1520,11 @@
 
                                             <tr>
                                                 <td>Junior Secondary</td>
-                                                <td>2021/2022</td>
-                                                <td>First Term</td>
                                                 <td>JS3 DIAMOND</td>
                                             </tr>
 
                                             <tr>
                                                 <td>Junior Secondary</td>
-                                                <td>2021/2022</td>
-                                                <td>Second Term</td>
                                                 <td>JS3 DIAMOND</td>
                                             </tr>
                                            
@@ -1607,54 +1588,200 @@
         <!-- FOOTER CLOSED -->
     </div>
 
+ <!-- MODAL FOR List of subject for junior  -->
+ <div class="modal fade" id="modaldemo8">
+    <div class="modal-dialog modal-dialog-centered text-center" role="document">
+        <div class="modal-content modal-content-demo">
+            <div class="modal-header">
+                <h6 class="modal-title"> Subject(s)</h6> 
 
-     <!-- MODAL ALERT MESSAGE FOR SUCCESSFUL SUBMIT -->
-     <div class="modal fade" id="modaldemo4">
-        <div class="modal-dialog modal-dialog-centered text-center " role="document">
-            <div class="modal-content tx-size-sm">
-                <div class="modal-body text-center p-4 pb-5">
-                    <button aria-label="Close" class="btn-close position-absolute" data-bs-dismiss="modal"><span aria-hidden="true">&times;</span></button>
-                    <i class="icon icon-check fs-70 text-success lh-1 my-5 d-inline-block"></i>
-                    <h4 class="text-success tx-semibold">Record successfully entered!</h4>
-                   <button aria-label="Close" class="btn btn-success pd-x-25" data-bs-dismiss="modal">Dismiss</button>
-                </div>
+                <label class="custom-control custom-checkbox ms-2">
+                    <input type="checkbox" class="custom-control-input" onClick="toggle(this)" >
+                    <span class="custom-control-label">Check All</span>
+                </label>
+
+                <button aria-label="Close" class="btn-close" data-bs-dismiss="modal"><span aria-hidden="true">&times;</span></button>
             </div>
+            <div class="modal-body">
+            
+                <div class="d-flex">
+                    <label class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" name="foo"  value="option1" >
+                        <span class="custom-control-label">English Language</span>
+                    </label>
+               
+                </div>
+
+                <div class="d-flex">
+                    <label class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" name="foo"  value="option1" >
+                        <span class="custom-control-label">French Language</span>
+                    </label>
+               
+                </div>
+
+                <div class="d-flex">
+                    <label class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" name="foo"  value="option1" >
+                        <span class="custom-control-label">Agricultural Science</span>
+                    </label>
+               
+                </div>
+
+                <div class="d-flex">
+                    <label class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" name="foo"  value="option1" >
+                        <span class="custom-control-label">Basic Technology</span>
+                    </label>
+               
+                </div>
+
+                <div class="d-flex">
+                    <label class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" name="foo"  value="option1" >
+                        <span class="custom-control-label">Christian Religious Studies</span>
+                    </label>
+               
+                </div>
+
+                <div class="d-flex">
+                    <label class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" name="foo"  value="option1" >
+                        <span class="custom-control-label">Business Studies </span>
+                    </label>
+               
+                </div>
+
+                <div class="d-flex">
+                    <label class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" name="foo"  value="option1" >
+                        <span class="custom-control-label">Security Education</span>
+                    </label>
+               
+                </div>
+
+                <div class="d-flex">
+                    <label class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" name="foo"  value="option1" >
+                        <span class="custom-control-label">Mathematics</span>
+                    </label>
+               
+                </div>
+
+                <div class="d-flex">
+                    <label class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" name="foo"  value="option1" >
+                        <span class="custom-control-label">Social Studies</span>
+                    </label>
+               
+                </div>
+
+                <div class="d-flex">
+                    <label class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" name="foo"  value="option1" >
+                        <span class="custom-control-label">Computer Studies</span>
+                    </label>
+               
+                </div>
+                
+                <div class="d-flex">
+                    <label class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" name="foo"  value="option1" >
+                        <span class="custom-control-label">Physical & Health Education</span>
+                    </label>
+               
+                </div>
+
+                <div class="d-flex">
+                    <label class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" name="foo"  value="option1" >
+                        <span class="custom-control-label">Manner</span>
+                    </label>
+               
+                </div>
+
+                <div class="d-flex">
+                    <label class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" name="foo"  value="option1" >
+                        <span class="custom-control-label">History</span>
+                    </label>
+               
+                </div>
+
+                <div class="d-flex">
+                    <label class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" name="foo"  value="option1" >
+                        <span class="custom-control-label">Music</span>
+                    </label>
+               
+                </div>
+
+                <div class="d-flex">
+                    <label class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" name="foo"  value="option1" >
+                        <span class="custom-control-label"> Igbo Language</span>
+                    </label>
+               
+                </div>
+
+                <div class="d-flex">
+                    <label class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" name="foo"  value="option1" >
+                        <span class="custom-control-label"> Basic Science</span>
+                    </label>
+               
+                </div>
+
+                <div class="d-flex">
+                    <label class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" name="foo"  value="option1" >
+                        <span class="custom-control-label">  Civic Education</span>
+                    </label>
+               
+                </div>
+
+                <div class="d-flex">
+                    <label class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" name="foo"  value="option1" >
+                        <span class="custom-control-label">   Home Economics</span>
+                    </label>
+               
+                </div>
+
+                <div class="d-flex">
+                    <label class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" name="foo"  value="option1" >
+                        <span class="custom-control-label">   Religious Moral Instruction</span>
+                    </label>
+               
+                </div>
+
+                <div class="d-flex">
+                    <label class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" name="foo"  value="option1" >
+                        <span class="custom-control-label">   C.C.A</span>
+                    </label>
+               
+                </div>
+
+                <div class="d-flex">
+                    <label class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" name="foo"  value="option1" >
+                        <span class="custom-control-label">   Information Technology</span>
+                    </label>
+               
+                </div>
+
+                <div class="modal-footer mt-2">
+                    <button class="btn btn-primary" id="add-now" >Add now</button>
+                </div>
+
+            </div>
+           
         </div>
     </div>
-     <!-- MODAL ALERT MESSAGE FOR SUCCESSFUL SUBMIT ENDS HERE-->
-
- <!-- MODAL ALERT MESSAGE INPUTS ARE EMPTY-->
-     <div class="modal fade" id="modaldemo5">
-        <div class="modal-dialog modal-dialog-centered text-center" role="document">
-            <div class="modal-content tx-size-sm">
-                <div class="modal-body text-center p-4 pb-5">
-                    <button aria-label="Close" class="btn-close position-absolute" data-bs-dismiss="modal"><span aria-hidden="true">&times;</span></button>
-                    <i class="icon icon-close fs-70 text-danger lh-1 my-5 d-inline-block"></i>
-                    <h4 class="text-danger">Error: Cannot process your entry, Fill all field!</h4>
-                  <button aria-label="Close" class="btn btn-danger pd-x-25" data-bs-dismiss="modal">Dismiss</button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- MODAL ALERT MESSAGE INPUTS ARE EMPTY ENDS HERE-->
-
-     <!-- MODAL EFFECTS FOR CONFIRMING -->
-     <div class="modal fade" id="modaldemo8">
-        <div class="modal-dialog modal-dialog-centered text-center" role="document">
-            <div class="modal-content modal-content-demo">
-              
-                <div class="modal-body">
-                    <p>Are you sure you want to enter now?</p>
-                </div>
-                <div class="modal-footer">
-                    <button class="btn btn-primary" data-bs-target="#modaldemo4" data-bs-toggle="modal" href="javascript:void(0)">Continue</button> <button class="btn btn-light" data-bs-dismiss="modal">Dismiss</button>
-                </div>
-            </div>
-        </div>
-    </div>
-     <!-- MODAL EFFECTS FOR CONFIRMING ENDS HERE -->
-
-
+</div>
+<!-- MODAL FOR List of subject for junior  ENDS HERE-->
 
     <!-- BACK-TO-TOP -->
     <a href="#top" id="back-to-top"><i class="fa fa-angle-up"></i></a>
@@ -1692,7 +1819,34 @@
 
     <!-- Switcher js -->
     <script src="../assets/switcher/js/switcher.js"></script>
+    
+    <script src="/assets/js/override.js"></script>
+    <script>
+        let level=document.getElementById("level-box");
+        let addSub=document.getElementById("add-sub");
+        let clearSub=document.getElementById("clear-sub");
+        let subHeld=document.getElementById("sub-held");
+        let addNow=document.getElementById("add-now");
 
+  
+
+        addSub.addEventListener('click',()=>{
+            if(level.style.display="none"){
+                level.style.display="block";
+}
+        })
+
+        addNow.addEventListener('click',()=>{
+            if(level.style.display="block"){
+                level.style.display="none";
+}
+        })
+
+        clearSub.addEventListener('click',()=>{
+            subHeld.value="";
+        })
+      
+    </script>
   
 
 </body>

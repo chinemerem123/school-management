@@ -958,7 +958,151 @@
                         <!-- Row -->
 
                        <div class="container-fluid">
+                        <div class="card p-4">
+                            <div class="row">
+                                <!-- Stor by Alphabet-->
+                            <div class="col-md-6 col-sm-12 ">
+                                <div class="h4">Sort by:</div>
+                                <div class="row">
+                                    <div class="col-xl-4 col-sm-12 mt-md-0 mt-2">
+                                        <select name="category" class="form-control form-select"  data-bs-placeholder="Select category">
+                                        <option value="All" >All</option>
+                                        <option value="Surname Alphabetically" >Surname Alphabetically</option>
+                                        <option value="First Name Alphabetically" >First Name Alphabetically</option>
+                                        <option value="Admission Year" >Admission Year</option>
+                                    </select></div>
+                                    <div class="col-xl-4 col-sm-12 mt-md-0 mt-2">
+                                        <select name="category" class="form-control form-select " data-bs-placeholder="Select category">
+                                            <option value="ascenidng" >Ascending</option>
+                                            <option value="descending" >Descending</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-xl-4 col-sm-12 mt-md-0 mt-2">
+                                        <button  class=" sub-btn btn btn-primary mb-0 w-100">Get now</button>
+                                    </div>
+                                </div>
+                                
 
+                              
+                                
+                            </div>
+                            <!-- Stor by Alphabet Ends here-->
+
+                            <!--Or break-->
+                            <div class="col-md-1 col-sm-12 p-3 text-center">
+                                <div class="h5 mt-md-5 fw-bold">Or</div>
+                            </div>
+                            <!--Or break Ends here-->
+
+                               <!-- Choose Username-->
+                               <div class="col-md-5 col-sm-12 ">
+                                <div class="h4">Registration ID:	</div>
+                                <div class="row">
+                                    <div class="col-xl-8 col-sm-12 mt-md-0 mt-2">
+                                        <select name="category" class="form-control form-select"  data-bs-placeholder="Select category">
+                                        <option value="" >Select</option>
+                                        <option value="Super Admin" >Super Admin</option>
+                                        <option value="Teacher" >Teacher</option>
+                                    </select></div>
+
+                                    <div class="col-xl-4 col-sm-12 mt-md-0 mt-2">
+                                        <button  class=" sub-btn btn btn-primary mb-0 w-100">Get now</button>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <!-- Choose Username Ends here-->
+
+                            </div>
+                        </div>
+
+                            <!-- Row 2 Tables-->
+                            <div class="card">
+                           
+                                <div class="card-body">
+                                    <div class="table-responsive">
+                                        <table class="table table-bordered text-nowrap border-bottom" id="basic-datatable">
+                                            <thead>
+                                                <tr>
+                    
+                                                    <th>
+                                                        <label class="custom-control custom-checkbox">
+                                                            <input type="checkbox" class="custom-control-input" onClick="toggle(this)" >
+                                                            <span class="custom-control-label"></span>
+                                                        </label>
+                                                </th>
+                                                <th></th>
+                                                
+                                                    <th class="wd-15p border-bottom-0">Registration ID:</th>
+                                                    <th class="wd-15p border-bottom-0">Surname</th>
+                                                    <th class="wd-15p border-bottom-0">First Name</th>
+                                                    <th class="wd-15p border-bottom-0">Other Name</th>
+                                                    <th class="wd-15p border-bottom-0">Gender</th>
+                                                    <th class="wd-20p border-bottom-0">	Employment year</th>
+    
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+                                                        <label class="custom-control custom-checkbox">
+                                                            <input type="checkbox" class="custom-control-input" name="foo"  value="option1" >
+                                                            <span class="custom-control-label"></span>
+                                                        </label>
+                                                    </td>
+                                                    <td class="text-center"><img src="/assets/images/users/10.jpg" width="50" alt=""></td>
+                                                    <td class="text-center"><a data-bs-effect="effect-slide-in-bottom" data-bs-toggle="modal" href="#largemodal"  class="btn btn-gray"> CICS/2021/076</a></td>
+                                                    <td class="text-center">Nnaji</td>
+                                                    <td class="text-center">Christian</td>
+                                                    <td class="text-center">Chinemrem</td>
+                                                    <td class="text-center"><img src="/assets/images/faces/icons8-boy-100.png" width="30" alt=""></td>
+                                                    <td class="text-center">2021</td>
+                                                </tr>
+    
+                                                <tr>
+                                                    <td>
+                                                        <label class="custom-control custom-checkbox">
+                                                            <input type="checkbox" class="custom-control-input" name="foo"  value="option1" >
+                                                            <span class="custom-control-label"></span>
+                                                        </label>
+                                                    </td>
+                                                    <td class="text-center"><img src="/assets/images/users/10.jpg" width="50" alt=""></td>
+                                                    <td class="text-center"><a data-bs-effect="effect-slide-in-bottom" data-bs-toggle="modal" href="#largemodal"  class="btn btn-gray"> CICS/2021/077</a></td>
+                                                    <td class="text-center">Shuah</td>
+                                                    <td class="text-center">Hannah</td>
+                                                    <td class="text-center">Oluwatomiwa</td>
+                                                    <td class="text-center"><img src="/assets/images/faces/icons8-girl-100.png" width="30" alt=""></td>
+                                                    <td class="text-center">2021</td>
+                                                </tr>
+                                                
+                                            </tbody>
+                                        </table>
+    
+                                        <div class="send-student mt-4">
+                                            <div class="row">
+                                                <div class="col-md-3">
+                                           <div class="h4">Staff:</div>
+                                            <div class="student d-flex">
+                                                <a href="#" class="btn btn-primary">Send SMS</a>
+                                                <a href="#" class="btn btn-success ms-2">Send Email</a>
+                                            </div>
+                                                </div>
+    
+                                                <div class="col-md-3  mt-md-0 mt-5">
+                                                    <div class="h4">Next of Kin:</div>
+                                                        <div class="student d-flex">
+                                                           <a href="#" class="btn btn-primary">Send SMS</a>
+                                                            <a href="#" class="btn btn-success ms-2">Send Email</a>
+                                                                        </div>
+                                                                                                </div>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                             <!-- Row 2 Tables Ends here-->
+    
                        </div>
 
                         <!-- /Row Ends here -->

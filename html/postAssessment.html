@@ -944,85 +944,45 @@
 
                         <!-- PAGE-HEADER -->
                         <div class="page-header">
-                            <h1 class="page-title">Set Assessment/Assignments</h1>
+                            <h1 class="page-title">Post Assessment/Assignments</h1>
                             <div>
                                 <ol class="breadcrumb">
                                     <li class="breadcrumb-item"><a href="javascript:void(0)">Pages</a></li>
-                                    <li class="breadcrumb-item active" aria-current="page">Select Assessment</li>
+                                    <li class="breadcrumb-item active" aria-current="page">Post Assessment</li>
                                 </ol>
                             </div>
                         </div>
                         <!-- PAGE-HEADER END -->
 
-                        <!-- ROW-1 OPEN -->
+                       
                         <!-- Row -->
 
-                      <div class="container-fluid">
-                        <div class="card p-4">
-<div class="row">
-    <div class="col-md-6">
-<form action="/html/postAssessment.html">
-                       <div class="form-group  ">
-                                <label for="level" class="from-lable">Level</label>
-                                <select name="level" class="form-control form-select" id="level" data-bs-placeholder="Select level">
-                                        <option value="" >-Select-</option>
-                                        <option value="Junior Secondary" >Junior Secondary</option>
-                                        <option value="Junior Secondary" >Senior Secondary</option>
-                                    </select>
-                                    
+                        <div class="container-fluid">
+                            <div class="card p-4">
+                                <div class="h4">You have chosen to publish assessment or assignment material "hme" for Junior Secondary - 2020/2021 - First term - JS1 DIAMOND</div>
+
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="date" class="form-label">Attach the assessment material</label>
+                                        <input type="file" class="dropify" data-bs-height="180" />
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="date" class="form-label">Description or comment</label>
+                                        <textarea name="" id="" class="form-control"></textarea>
+                                        </div>
+
+                                        <div class="btn-upload">
+                                            <button class="btn btn-gray">Upload now</button>
+                                            <a href="/html/assessmentAdd.html" class="btn btn-primary">Set a new assessment</a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                               
                             </div>
-
-                            
-                            <div class="form-group">
-                                <label for="session" class="from-lable">Session</label>
-                                <select name="session" class="form-control form-select" id="session" data-bs-placeholder="Select session">
-                                        <option value="" >-Select-</option>
-                                        <option value="2020/2021" >2020/2021</option>
-                                        <option value="2021/2022" >2021/2022</option>
-                                        <option value="2022/2023" >2022/2023</option>
-                                    </select>
-                                    
-                            </div>
-
-
-                            <div class="form-group">
-                                <label for="term" class="from-lable">Term	</label>
-                                <select name="term" class="form-control form-select" id="term" data-bs-placeholder="Select term">
-                                        <option value="" >-Select-</option>
-                                        <option value="First term" >First term</option>
-                                        <option value="Second term" >Second term</option>
-                                         <option value="Third term" >Third term</option>
-                                    </select>
-                                    
-                            </div>
-
-                            <div class="form-group">
-                                <label for="class" class="from-lable">Class</label>
-                                <select name="class" class="form-control form-select" id="class" data-bs-placeholder="Select class">
-                                        <option value="" >-Select-</option>
-                                        <option value="JS1 DIAMOND" >JS1 DIAMOND</option>
-                                        <option value="JS1 PLATINUM" >JS1 PLATINUM</option>
-                                        <option value="JS2 DIAMOND" >JS2 DIAMOND</option>
-                                        <option value="JS2 PLATINUM" >JS2 PLATINUM</option>
-                                        <option value="JS3 DIAMOND" >JS3 DIAMOND</option>
-                                        <option value="JS3 PLATINUM" >JS3 PLATINUM</option>
-                                    </select>
-                                    
-                            </div>
-
-                            <div class="form-group">
-                                <label for="level" class="from-lable">Title of Assessment or Assignment</label>
-                                <input type="text" class="form-control w-100 p-2"  id="regnum">
-                            </div>
-
-                            <button class="btn btn-primary mt-3"> Continue to complete</button>
-                        </form>
                         </div>
-                    </div>
-                            
-
-                        </div>
-                      </div>
 
                         <!-- /Row Ends here -->
                     </div>
@@ -1102,19 +1062,10 @@
     <script src="../assets/js/sticky.js"></script>
 
     
-     <!-- DATA TABLE JS-->
-     <script src="../assets/plugins/datatable/js/jquery.dataTables.min.js"></script>
-     <script src="../assets/plugins/datatable/js/dataTables.bootstrap5.js"></script>
-     <script src="../assets/plugins/datatable/js/dataTables.buttons.min.js"></script>
-     <script src="../assets/plugins/datatable/js/buttons.bootstrap5.min.js"></script>
-     <script src="../assets/plugins/datatable/js/jszip.min.js"></script>
-     <script src="../assets/plugins/datatable/pdfmake/pdfmake.min.js"></script>
-     <script src="../assets/plugins/datatable/pdfmake/vfs_fonts.js"></script>
-     <script src="../assets/plugins/datatable/js/buttons.html5.min.js"></script>
-     <script src="../assets/plugins/datatable/js/buttons.print.min.js"></script>
-     <script src="../assets/plugins/datatable/js/buttons.colVis.min.js"></script>
-     <script src="../assets/plugins/datatable/dataTables.responsive.min.js"></script>
-     <script src="../assets/plugins/datatable/responsive.bootstrap5.min.js"></script>
+      <!-- FILE UPLOADES JS -->
+    <script src="../assets/plugins/fileuploads/js/fileupload.js"></script>
+    <script src="../assets/plugins/fileuploads/js/file-upload.js"></script>
+
      <script src="../assets/js/table-data.js"></script>
 
     <!-- CUSTOM JS -->

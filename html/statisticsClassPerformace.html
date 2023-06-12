@@ -1032,8 +1032,13 @@
                                     <div class="col-md-8 ">
                                         <div class="h4">Class performance statistics for JS1 DIAMOND - First term - 2020/2021 - Junior</div>
                                         
+                                        <canvas id="myChart"></canvas>
                                     </div>
+
                                     <div class="col-md-4  text-center">
+
+                                        <div class="mt-md-5">
+                                            <br>
 
                                         <div class="pass text-center">
                                             <div class="h4 fw-bold">Total Pass(es)</div>
@@ -1044,6 +1049,7 @@
                                             <div class="h4 fw-bold">Total Fail(s)</div>
                                             <div class="h3 fw-bold"><i class="bi bi-x-circle-fill text-red"></i>13</div>
                                         </div>
+                                    </div>
 
                                         <a href="classSubjectPerformance.html" class="btn btn-primary">View Subject Performance</a>
 
@@ -1146,6 +1152,29 @@
  <!-- CHART-CIRCLE JS-->
     <script src="../assets/js/circle-progress.min.js"></script>  
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.3.0/chart.min.js"></script>
+    <script>
+        const ctx = document.getElementById('myChart');
+  
+  new Chart(ctx, {
+    type: 'pie',
+    data: {
+  labels: [
+    'Pass - Class Performace: 86.7%',
+    'Fail - Class Performace: 13.3%'
+  ],
+  datasets: [{
+    label: 'My First Dataset',
+    data: [300, 50],
+    backgroundColor: [
+      'rgb(47, 126, 216)',
+      'rgb(13, 35, 58)'
+    ],
+    hoverOffset: 4
+  }]
+    }
+  });
+    </script>
   
 
 </body>

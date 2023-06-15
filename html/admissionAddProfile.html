@@ -960,7 +960,70 @@
                         <div class="container-fluid">
                             <div class="card p-4">
                                 <div class="row">
-                                    <div class="col-md-4 col-sm-12"></div>
+                                    <div class="col-md-4 col-sm-12">
+                                        <div class="form-group">
+                                            <label for="level" class="from-lable">Admission Type</label>
+                                            <select name="level" class="form-control form-select" id="level" data-bs-placeholder="Select level">
+                                                    <option value="" >-Select-</option>
+                                                    <option value="Entrance" >Entrance</option>
+                                                    <option value="Interview" >Interview</option>
+                                                </select>
+                                                
+                                        </div>
+        
+                                    </div>
+
+                                    <div class="col-md-4 col-sm-12">
+                                        <div class="form-group">
+                                            <label for="level" class="from-lable">Admission Year</label>
+
+                                            <div class="d-flex">
+                                            <select name="ad-level" class="form-control form-select" id="ad-year" data-bs-placeholder="Select level">
+                                                    <option value="" >-Select-</option>
+                                                    <option value="2023" >2023</option>
+                                                </select>
+                                                <button class="add btn btn-primary ms-3" id="add-year">Add</button>
+                                            </div>
+
+                                            <div class="add-drop mt-3">
+                                                <input type="text" name="" class="form-control" >
+                                                <div class="mt-2">
+                                                <button class="btn btn-primary " id="add-now">Add now</button>
+                                                <button class="btn btn-gray ms-2" id="add-close"> Close</button>
+                                            </div>
+
+                                            </div>
+                                                
+                                                
+                                        </div>
+        
+                                    </div>
+
+                                       <div class="col-md-4 col-sm-12">
+                                        <div class="form-group">
+                                            <label for="level" class="from-lable">Admission Level</label>
+
+                                            <div class="d-flex">
+                                            <select name="ad-level" class="form-control form-select" id="ad-level" data-bs-placeholder="Select level">
+                                                    <option value="" >-Select-</option>
+                                                    <option value="2023" >2023</option>
+                                                </select>
+                                                <button class="add btn btn-primary ms-3" id="add-level">Add</button>
+                                            </div>
+
+                                            <div class="add-drop2 mt-3">
+                                                <input type="text" name="" class="form-control" >
+                                                <div class="mt-2">
+                                                <button class="btn btn-primary " id="add-nowl">Add now</button>
+                                                <button class="btn btn-gray ms-2" id="add-closel"> Close</button>
+                                            </div>
+
+                                            </div>
+                                                
+                                                
+                                        </div>
+        
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -1064,7 +1127,38 @@
     <!-- Switcher js -->
     <script src="../assets/switcher/js/switcher.js"></script>
 
-  
+  <script>
+
+let addYear=document.getElementById('add-year');
+let addDrop=document.querySelector('.add-drop');
+let addClose=document.getElementById('add-close');
+
+if(addDrop.style.display="none"){
+      addYear.addEventListener('click',()=>{
+        addDrop.style.display="block";
+      })
+}
+
+addClose.addEventListener('click',()=>{
+    addDrop.style.display="none";
+})
+
+
+let addLevel=document.getElementById('add-level');
+let addDropl=document.querySelector('.add-drop2');
+let addClosel=document.getElementById('add-closel');
+
+if(addDropl.style.display="none"){
+      addLevel.addEventListener('click',()=>{
+        addDropl.style.display="block";
+      })
+}
+
+addClosel.addEventListener('click',()=>{
+    addDropl.style.display="none";
+})
+
+  </script>
 
 </body>
 

@@ -964,9 +964,163 @@
                             <a href="#" class="bg-primary br-5 p-1 ms-2"><i class="bi bi-file-word-fill text-white"></i></a>
                             <a href="#" class="bg-success br-5 p-1 ms-2"><i class="bi bi-file-excel-fill text-white"></i></a>
                             </div>
+
                         <div class="card p-4 mt-3">
+                            <div class="row">
+                                <div class="col-md-2 col-sm-12">
+                                    <div class="form-group">
+                                        <label for="level" class="from-lable">Admission Type</label>
+                                        <select name="level" class="form-control form-select" id="level" data-bs-placeholder="Select level">
+                                                <option value="" >-Select-</option>
+                                                <option value="Entrance" >Entrance</option>
+                                                <option value="Interview" >Interview</option>
+                                            </select>
+                                            
+                                    </div>
+    
+                                </div>
+
+                                <div class="col-md-2 col-sm-12">
+                                    <div class="form-group">
+                                        <label for="level" class="from-lable">Admission Year</label>
+
+                                        <div class="d-flex">
+                                        <select name="ad-level" class="form-control form-select" id="ad-year" data-bs-placeholder="Select level">
+                                                <option value="" >-Select-</option>
+                                                <option value="2023" >2023</option>
+                                            </select>
+                                      
+                                        </div>
+
+                                            
+                                            
+                                    </div>
+    
+                                </div>
+
+                                   <div class="col-md-2 col-sm-12">
+                                    <div class="form-group">
+                                        <label for="level" class="from-lable">Admission Level</label>
+
+                                        <select name="ad-level" class="form-control form-select" id="ad-level" data-bs-placeholder="Select level">
+                                                <option value="" >-Select-</option>
+                                                <option value="1" >1</option>
+                                            </select>
+                                            
+                                    </div>
+    
+                                </div>
+
+                                <div class="col-md-2 col-sm-12">
+                                    <div class="form-group">
+                                        <label for="level" class="from-lable">Sort by</label>
+
+                                        <select name="ad-level" class="form-control form-select" id="ad-level" data-bs-placeholder="Select level">
+                                                <option value="All" >All</option>
+                                                <option value="Surname Alphbetically" >Surname Alphbetically</option>
+                                                <option value="Firsrt name Alphbetically" >Firsrt name Alphbetically</option>
+                                            </select>
+                                            
+                                    </div>
+                                </div>
+
+                                <div class="col-md-2 col-sm-12">
+                                    <div class="form-group">
+                                        <label for="level" class="from-lable">Sort by</label>
+
+                                        <select name="ad-level" class="form-control form-select" id="ad-level" data-bs-placeholder="Select level">
+                                                <option value="Descending" >Descending</option>
+                                                <option value="Ascending" >Ascending</option>
+                                            </select>
+                                            
+                                    </div>
+                                </div>
+
+                                <div class="col-md-2 col-sm-12">
+                                    <div class="form-group mt-2">
+                                        <label for="level" class="from-lable"></label><br>
+                                        <button class="btn btn-primary">Get now</button>
+                                            
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="text-center">-OR-</div>
+
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label for="level" class="from-lable">Exam number:</label>
+                                        <input type="text" name="" class="form-control">
+                                            
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4">
+                                    <div class="form-group mt-2">
+                                        <label for="level" class="from-lable"></label><br>
+                                        <button class="btn btn-primary">Get now</button>
+                                            
+                                    </div>
+                                </div>
+                            </div>
+
+                            
 
                         </div>
+
+                         <!-- Row 2 Tables-->
+                         <div class="card">
+                           
+                            <div class="card-body">
+                                <div class="table-responsive">
+                                    <table class="table table-bordered text-nowrap border-bottom" id="basic-datatable">
+                                        <thead>
+                                            <tr>
+                
+                                                <th>
+                                                    <label class="custom-control custom-checkbox">
+                                                        <input type="checkbox" class="custom-control-input" onClick="toggle(this)" >
+                                                        <span class="custom-control-label"></span>
+                                                    </label>
+                                            </th>
+                                           
+                                                <th class="wd-15p border-bottom-0">	Exam no.</th>
+                                                <th class="wd-15p border-bottom-0">Surname</th>
+                                                <th class="wd-15p border-bottom-0">First Name</th>
+                                                <th class="wd-15p border-bottom-0">Other Name</th>
+                                                <th class="wd-15p border-bottom-0">Gender</th>
+                                                <th class="wd-20p border-bottom-0">Admission Year</th>
+                                                <th class="wd-20p border-bottom-0">Status</th>
+
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                       
+                                            
+                                        </tbody>
+                                    </table>
+
+                                    <div class="send-candidate mt-4">
+                                        <div class="row">
+                                            <div class="col-md-3">
+                                       <div class="h4"> Candidate(s):</div>
+                                        <div class="candidate d-flex">
+                                            <a href="#" class="btn btn-primary">Send SMS</a>
+                                           
+                                        </div>
+                                            </div>
+
+                                          
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                         <!-- Row 2 Tables Ends here-->
+
                        </div>
 
                         <!-- /Row Ends here -->

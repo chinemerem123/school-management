@@ -997,7 +997,7 @@
 
                                                     <div class="update mt-3">
                                                         <button class="btn btn-primary">Update now</button>
-                                                        <a href="#"><i class="bi bi-info-circle-fill fs-20 ms-3"></i></a>
+                                                        <a href="#" data-bs-placement="right" data-bs-toggle="tooltip" title="This is the pattern for getting the grand total average."><i class="bi bi-info-circle-fill fs-20 ms-3"></i></a>
                                                     </div>
 
                                                    </div>
@@ -1238,7 +1238,10 @@
                                                         </div>
                                                     </div>
 
-                                                    <button type="submit" class="btn btn-primary">Update</button>
+                                                    <div class="update mt-3">
+                                                        <button class="btn btn-primary">Update now</button>
+                                                        <a href="#" data-bs-placement="right" data-bs-toggle="tooltip" title="This is mainly the total number of subjects offered in a term."><i class="bi bi-info-circle-fill fs-20 ms-3"></i></a>
+                                                    </div>
 
                                                    </div>
                                                     <!-- Grand Total Average Score Divisor Ends here-->
@@ -1264,11 +1267,12 @@
                                                                             <tr>
                                                                                 <th></th>
                                                                                 <th>Lower cutoff</th>
+                                                                                <th></th>
                                                                                 <th>Hight cutoff</th>
                                                                                 <th>Remark</th>
                                                                             </tr>
                                                                         </thead>
-                                                                        <tbody>
+                                                                        <tbody class="tbody">
                                                                             <tr>
                                                                                 <td>
                                                                                     <label class="custom-control custom-checkbox">
@@ -1276,11 +1280,13 @@
                                                                                         <span class="custom-control-label"></span>
                                                                                     </label>
                                                                                 </td>
+
                                                                                 <td>
                                                                                     <div class="form-group">
                                                                                         <input type="text" name="" value="0" class="form-control" id="">
                                                                                     </div>
                                                                                 </td>
+                                                                                <td> >= x < </td>
                                                                                 <td>  
                                                                                     <div class="form-group">
                                                                                     <input type="text" name="" value="40" class="form-control" id="">
@@ -1305,6 +1311,7 @@
                                                                                         <input type="text" name="" value="40" class="form-control" id="">
                                                                                     </div>
                                                                                 </td>
+                                                                                <td> >= x < </td>
                                                                                 <td>  
                                                                                     <div class="form-group">
                                                                                     <input type="text" name="" value="45" class="form-control" id="">
@@ -1329,6 +1336,7 @@
                                                                                         <input type="text" name="" value="40" class="form-control" id="">
                                                                                     </div>
                                                                                 </td>
+                                                                                <td> >= x < </td>
                                                                                 <td>  
                                                                                     <div class="form-group">
                                                                                     <input type="text" name="" value="45" class="form-control" id="">
@@ -1344,7 +1352,7 @@
                                                                            
                                                                         </tbody>
                                                                     </table>
-                                                                    <button class="btn btn-primary mt-2">+ Add New</button>
+                                                                    <button class="btn btn-primary mt-2 add-row">+ Add New</button>
                                                                 </div>
                                                             </div>
 
@@ -1356,11 +1364,12 @@
                                                                             <tr>
                                                                                 <th></th>
                                                                                 <th>Lower cutoff</th>
+                                                                                <th></th>
                                                                                 <th>Hight cutoff</th>
                                                                                 <th>Remark</th>
                                                                             </tr>
                                                                         </thead>
-                                                                        <tbody>
+                                                                        <tbody class="tbody">
                                                                             <tr>
                                                                                 <td>
                                                                                     <label class="custom-control custom-checkbox">
@@ -1373,6 +1382,7 @@
                                                                                         <input type="text" name="" value="0" class="form-control" id="">
                                                                                     </div>
                                                                                 </td>
+                                                                                <td> >= x < </td>
                                                                                 <td>  
                                                                                     <div class="form-group">
                                                                                     <input type="text" name="" value="50" class="form-control" id="">
@@ -1397,6 +1407,7 @@
                                                                                         <input type="text" name="" value="50" class="form-control" id="">
                                                                                     </div>
                                                                                 </td>
+                                                                                <td> >= x < </td>
                                                                                 <td>  
                                                                                     <div class="form-group">
                                                                                     <input type="text" name="" value="100" class="form-control" id="">
@@ -1410,7 +1421,7 @@
                                                                             </tr>
                                                                         </tbody>
                                                                     </table>
-                                                                    <button class="btn btn-primary mt-2">+ Add New</button>
+                                                                    <button class="btn btn-primary mt-2 add-row">+ Add New</button>
                                                                 </div>
                                                             </div>
 
@@ -1426,7 +1437,7 @@
                                                                                 <th>Remark</th>
                                                                             </tr>
                                                                         </thead>
-                                                                        <tbody>
+                                                                        <tbody class="tbody">
                                                                             <tr>
                                                                                 <td>
                                                                                     <label class="custom-control custom-checkbox">
@@ -1502,7 +1513,7 @@
                                                                            
                                                                         </tbody>
                                                                     </table>
-                                                                    <button class="btn btn-primary mt-2">+ Add New</button>
+                                                                    <button class="btn btn-primary mt-2 add-row">+ Add New</button>
                                                                 </div>
                                                             </div>
 
@@ -1518,7 +1529,7 @@
                                                                                 <th>Remark</th>
                                                                             </tr>
                                                                         </thead>
-                                                                        <tbody>
+                                                                        <tbody class="tbody">
                                                                             <tr>
                                                                                 <td>
                                                                                     <label class="custom-control custom-checkbox">
@@ -1594,7 +1605,7 @@
                                                                            
                                                                         </tbody>
                                                                     </table>
-                                                                    <button class="btn btn-primary mt-2">+ Add New</button>
+                                                                    <button class="btn btn-primary mt-2 add-row">+ Add New</button>
                                                                 </div>
                                                             </div>
 
@@ -1610,7 +1621,7 @@
                                                                                 <th>Remark</th>
                                                                             </tr>
                                                                         </thead>
-                                                                        <tbody>
+                                                                        <tbody class="tbody">
                                                                             <tr>
                                                                                 <td>
                                                                                     <label class="custom-control custom-checkbox">
@@ -1686,7 +1697,7 @@
                                                                            
                                                                         </tbody>
                                                                     </table>
-                                                                    <button class="btn btn-primary mt-2">+ Add New</button>
+                                                                    <button class="btn btn-primary mt-2 add-row">+ Add New</button>
                                                                 </div>
                                                             </div>
 
@@ -1702,7 +1713,7 @@
                                                                                 <th>Remark</th>
                                                                             </tr>
                                                                         </thead>
-                                                                        <tbody>
+                                                                        <tbody class="tbody">
                                                                             <tr>
                                                                                 <td>
                                                                                     <label class="custom-control custom-checkbox">
@@ -1778,7 +1789,7 @@
                                                                            
                                                                         </tbody>
                                                                     </table>
-                                                                    <button class="btn btn-primary mt-2">+ Add New</button>
+                                                                    <button class="btn btn-primary mt-2 add-row">+ Add New</button>
                                                                 </div>
                                                             </div>
 
@@ -1790,11 +1801,12 @@
                                                                             <tr>
                                                                                 <th></th>
                                                                                 <th>Lower cutoff</th>
+                                                                                <th></th>
                                                                                 <th>Hight cutoff</th>
                                                                                 <th>Remark</th>
                                                                             </tr>
                                                                         </thead>
-                                                                        <tbody>
+                                                                        <tbody class="tbody">
                                                                             <tr>
                                                                                 <td>
                                                                                     <label class="custom-control custom-checkbox">
@@ -1807,6 +1819,7 @@
                                                                                         <input type="text" name="" value="0" class="form-control" id="">
                                                                                     </div>
                                                                                 </td>
+                                                                                <td> >= x < </td>
                                                                                 <td>  
                                                                                     <div class="form-group">
                                                                                     <input type="text" name="" value="40" class="form-control" id="">
@@ -1831,6 +1844,7 @@
                                                                                         <input type="text" name="" value="40" class="form-control" id="">
                                                                                     </div>
                                                                                 </td>
+                                                                                <td> >= x < </td>
                                                                                 <td>  
                                                                                     <div class="form-group">
                                                                                     <input type="text" name="" value="45" class="form-control" id="">
@@ -1842,7 +1856,7 @@
                                                                                     </div>
                                                                                 </td>
                                                                             </tr>
-                                                                            
+
                                                                             <tr>
                                                                                 <td>
                                                                                     <label class="custom-control custom-checkbox">
@@ -1855,6 +1869,7 @@
                                                                                         <input type="text" name="" value="40" class="form-control" id="">
                                                                                     </div>
                                                                                 </td>
+                                                                                <td> >= x < </td>
                                                                                 <td>  
                                                                                     <div class="form-group">
                                                                                     <input type="text" name="" value="45" class="form-control" id="">
@@ -1870,13 +1885,16 @@
                                                                            
                                                                         </tbody>
                                                                     </table>
-                                                                    <button class="btn btn-primary mt-2">+ Add New</button>
+                                                                    <button class="btn btn-primary mt-2 add-row">+ Add New</button>
                                                                 </div>
                                                             </div>
 
                                                         </div><br>
 
-                                                        <button type="submit" class="btn btn-primary">Update now</button>
+                                                        <div class="update mt-3">
+                                                            <button class="btn btn-primary">Update now</button>
+                                                            <a href="#" data-bs-placement="right" data-bs-toggle="tooltip" title="This is the cutoff mark any student must reach to be successful."><i class="bi bi-info-circle-fill fs-20 ms-3"></i></a>
+                                                        </div>
                                                       
 
                                                      </div>
@@ -2270,7 +2288,10 @@
 
                                                         </div>
 
-                                                        <button class="btn btn-primary mt-4">Update now</button>
+                                                        <div class="update mt-3">
+                                                            <button class="btn btn-primary">Update now</button>
+                                                            <a href="#" data-bs-placement="right" data-bs-toggle="tooltip" title="This is mainly the required subjects any student must pass in order to be successful."><i class="bi bi-info-circle-fill fs-20 ms-3"></i></a>
+                                                        </div>
 
 
                                                      </div>
@@ -5115,7 +5136,7 @@
                                                         <div class="row">
                                                             
                                                             <div class="col-md-6">
-                                                                <div class="h5 mt-2">Primary Level</div>
+                                                                <div class="h5 mt-2">Primary Level 55</div>
                                                                 <div class="table-responsive">
                                                                     <table class="table border text-nowrap text-md-nowrap mb-0">
                                                                         <thead class="table-primary">
@@ -5202,7 +5223,7 @@
                                                                            
                                                                         </tbody>
                                                                     </table>
-                                                                    <button class="btn btn-primary mt-2">+ Add New</button>
+                                                                    <button class="btn btn-primary mt-2 add-row">+ Add New</button>
                                                                 </div>
                                                             </div>
 
@@ -5268,7 +5289,7 @@
                                                                             </tr>
                                                                         </tbody>
                                                                     </table>
-                                                                    <button class="btn btn-primary mt-2">+ Add New</button>
+                                                                    <button class="btn btn-primary mt-2 ">+ Add New</button>
                                                                 </div>
                                                             </div>
 
@@ -6743,7 +6764,63 @@
     <!-- Switcher js -->
     <script src="../assets/switcher/js/switcher.js"></script>
 
-  
+  <!-- Tooltip and Popover JS -->
+  <script src="../assets/js/tooltip&popover.js"></script>
+
+  <!-- <script src="/assets/js/addTableRow.js"></script> -->
+
+  <script>
+    
+let btnRowAdds=document.querySelectorAll(".add-row");
+let tbodys=document.querySelectorAll(".tbody");
+let tr=document.createElement("tr");
+
+let td1=document.createElement("td");
+td1.innerHTML=`  <label class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" name="example-checkbox1" value="option1">
+                <span class="custom-control-label"></span>
+                </label>`;
+
+let td2=document.createElement("td");
+td2.innerHTML=` <div class="form-group">
+                <input type="text" name="" value="0" class="form-control" id="">
+                </div>`;
+
+let td3=document.createElement("td");
+td3.innerText=">= x <";
+
+
+let td4=document.createElement("td");
+td4.innerHTML=` <div class="form-group">
+                <input type="text" name="" value="0" class="form-control" id="">
+                </div>`;
+
+let td5=document.createElement("td");
+td5.innerHTML=` <div class="form-group">
+                <input type="text" name="" value="0" class="form-control" id="">
+                </div>`;
+
+
+tr.appendChild(td1);
+tr.appendChild(td2);
+tr.appendChild(td3);
+tr.appendChild(td4);
+tr.appendChild(td5);
+
+
+
+
+btnRowAdds.forEach((btnRowAdd, index)=>{
+    btnRowAdd.addEventListener('click',()=>{
+        tbodys.forEach((tbody, index)=>{
+            tbody.index.appendChild(tr);
+        })
+    })
+})
+
+              
+           
+  </script>
 
 </body>
 

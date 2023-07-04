@@ -959,7 +959,182 @@
 
                         <div class="container">
                             <div class="card p-4">
-
+                               <div class="card-body">
+                                <div style="padding: 10px">
+                                    <div style="padding-bottom:20px">
+                                        <div class="item-cap bg-primary text-white br-5" style=" padding:10px; cursor:pointer" onclick="$('#p_schcal').toggle();">School Calendar plugins <span style="float:right; cursor:pointer; font-size:12px">[+/-]</span></div>
+                                        <div id="p_schcal" style="padding:10px 0px 10px 0px; display:none">
+                                           <div class="cap" style="padding:6px">Copy & paste the below script to the head section of the page required</div>
+                                           <div style="padding:10px; font-size:14px; background:#f6f6f6; border:1px dashed green"><pre><code>&lt;script type=&quot;text/javascript&quot; src=&quot;https://eg.candygroupofschools.com.ng/js/jquery.min.js&quot;&gt;&lt;/script&gt;
+                            &lt;script type=&quot;text/javascript&quot; src=&quot;https://eg.candygroupofschools.com.ng/js/modalhelper.js&quot;&gt;&lt;/script&gt;
+                            &lt;script type=&quot;text/javascript&quot;&gt;
+                            if (window.addEventListener) {
+                               window.addEventListener('message', popthisCal, false);
+                            } else if (window.attachEvent) { // ie8
+                               window.attachEvent('onmessage', popthisCal);
+                            }
+                            function popthisCal(e){
+                             var id = e.data;
+                             showProgress('Please wait....');
+                             var url='https://eg.candygroupofschools.com.ng/plugins/school_cal_details.aspx?id='+id;
+                             $.get(url, function(data){
+                               hideProgress();
+                               popNotify(data);
+                             });
+                            }
+                            &lt;/script&gt;</code></pre></div>
+                                           <div class="cap" style="padding:6px">Copy & paste the below iframe element to the body section of the page required</div>
+                                           <div style="padding:10px; font-size:14px; background:#f6f6f6; border:1px dashed green"><pre><code>&lt;iframe src=&quot;https://eg.candygroupofschools.com.ng/plugins/school_cal.aspx?w=200&amp;h=200&amp;tdm=https://candygroupofschools.com.ng&quot; width=&quot;230&quot; height=&quot;230&quot; frameborder=&quot;0&quot; scrolling=&quot;auto&quot; allowtransparency=&quot;true&quot;&gt;&lt;/iframe&gt;</code></pre></div>
+                                           <div style="padding:6px; font-size:12px; background:#f6f6f6">
+                                            <table cellpadding="8" cellspacing="0" border="1" style="border:1px solid #999">
+                                                <tr style="background:#ccc">
+                                                    <td valign="top"><b>Parameters:</b></td><td valign="top"><b>Descriptions</b></td>
+                                                 </tr>   
+                                                 <tr>
+                                                    <td valign="top">w</td><td valign="top">The expected width of the school calendar plugin</td>
+                                                </tr> 
+                                                <tr>
+                                                    <td valign="top">h</td><td valign="top">The expected height of the school calendar plugin</td>
+                                                 </tr>
+                                                 <tr>
+                                                    <td valign="top">tdm</td><td valign="top">The host/target domain of the plugin.</td>
+                                                 </tr>   
+                                                 </table>
+                                           </div>
+                                        </div>
+                                    </div>
+                            
+                                    <div style="padding-bottom:20px">
+                                        <div class="item-cap bg-primary text-white br-5" style=" padding:10px; cursor:pointer" onclick="$('#p_news').toggle();">News & Events plugins <span style="float:right; cursor:pointer; font-size:12px">[+/-]</span></div>
+                                        <div id="p_news" style="padding:10px 0px 10px 0px; display:none">
+                                            <div class="cap" style="padding:6px">Copy & paste the below script to the head section of the page required</div>
+                                           <div style="padding:10px; font-size:14px; background:#f6f6f6; border:1px dashed green"><pre><code>&lt;script type=&quot;text/javascript&quot; src=&quot;https://eg.candygroupofschools.com.ng/js/jquery.min.js&quot;&gt;&lt;/script&gt;
+                            &lt;script type=&quot;text/javascript&quot; src=&quot;https://eg.candygroupofschools.com.ng/js/modalhelper.js&quot;&gt;&lt;/script&gt;
+                            &lt;script type=&quot;text/javascript&quot;&gt;
+                            if (window.addEventListener) {
+                               window.addEventListener('message', popthis, false);
+                            } else if (window.attachEvent) { // ie8
+                               window.attachEvent('onmessage', popthis);
+                            }
+                            function popthis(e){
+                             var id = e.data;
+                             showProgress('Please wait....');
+                             var url='https://eg.candygroupofschools.com.ng/plugins/pop_news_events.aspx?id='+id;
+                             $.get(url,function(data){
+                               hideProgress();
+                               popNotify(data);
+                             });
+                            }
+                            &lt;/script&gt;</code></pre></div>
+                                           <div class="cap" style="padding:6px">Copy & paste the below iframe element to the body section of the page required</div>
+                                           <div style="padding:10px; font-size:14px; background:#f6f6f6; border:1px dashed green"><pre><code>&lt;iframe src=&quot;https://eg.candygroupofschools.com.ng/plugins/news_event.aspx?type=news&amp;w=300&amp;h=400&amp;l=10&amp;tdm=https://candygroupofschools.com.ng&quot; width=&quot;330&quot; height=&quot;430&quot; frameborder=&quot;0&quot; scrolling=&quot;auto&quot; allowtransparency=&quot;true&quot;&gt;&lt;/iframe&gt;</code></pre></div>
+                                           <div style="padding:6px; font-size:12px; background:#f6f6f6">
+                                            <table cellpadding="8" cellspacing="0" border="1" style="border:1px solid #999">
+                                                <tr style="background:#ccc">
+                                                    <td valign="top"><b>Parameters:</b></td><td valign="top"><b>Descriptions</b></td>
+                                                 </tr>   
+                                                 <tr>
+                                                    <td valign="top">type</td><td valign="top">The type of the news plugin required. 
+                                                     Types are:<br />
+                                                     <em>news</em> - only news entries are displayed<br />
+                                                     <em>events</em> - only events entries are displayed<br />
+                                                     <em>news_events</em> - news and events entries are displayed together</td>
+                                                </tr> 
+                                                 <tr>
+                                                    <td valign="top">w</td><td valign="top">The expected width of the school calendar plugin</td>
+                                                </tr> 
+                                                <tr>
+                                                    <td valign="top">h</td><td valign="top">The expected height of the school calendar plugin</td>
+                                                 </tr>   
+                                                 <tr>
+                                                    <td valign="top">l</td><td valign="top">The limit or maximum number of entries to 
+                                                     display</td>
+                                                </tr>
+                                                 <tr>
+                                                    <td valign="top">tdm</td><td valign="top">The host/target domain of the plugin.</td>
+                                                 </tr>
+                                            </table>
+                                           </div>
+                                        </div>
+                                    </div>
+                            
+                                    <div style="padding-bottom:20px">
+                                        <div class="item-cap bg-primary text-white br-5" style=" padding:10px; cursor:pointer" onclick="$('#p_allnews').toggle();">All News & Events plugins <span style="float:right; cursor:pointer; font-size:12px">[+/-]</span></div>
+                                        <div id="p_allnews" style="padding:10px 0px 10px 0px; display: none">
+                                           <div class="cap" style="padding:6px">Copy & paste the below iframe element to the body section of the page required</div>
+                                           <div style="padding:10px; font-size:14px; background:#f6f6f6; border:1px dashed green"><pre><code>&lt;iframe src=&quot;https://eg.candygroupofschools.com.ng/plugins/news_events_all.aspx?hc=046C67&amp;cc=666666&amp;dc=046c67&quot; width=&quot;950&quot; height=&quot;550&quot; frameborder=&quot;0&quot; scrolling=&quot;auto&quot; allowtransparency=&quot;true&quot;&gt;&lt;/iframe&gt;</code></pre></div>
+                                           <div style="padding:6px; font-size:12px; background:#f6f6f6">
+                                            <table cellpadding="8" cellspacing="0" border="1" style="border:1px solid #999">
+                                                <tr style="background:#ccc">
+                                                    <td valign="top"><b>Parameters:</b></td><td valign="top"><b>Descriptions</b></td>
+                                                 </tr>   
+                                                 <tr>
+                                                    <td valign="top">hc</td><td valign="top">The header color of the entries</td>
+                                                </tr> 
+                                                 <tr>
+                                                    <td valign="top">cc</td><td valign="top">The caption color of the entries</td>
+                                                </tr> 
+                                                <tr>
+                                                    <td valign="top">dc</td><td valign="top">The detail color of the entries</td>
+                                                 </tr>   
+                                                 </table>
+                                           </div>
+                                        </div>
+                                    </div>
+                            
+                                    <div style="padding-bottom:20px">
+                                        <div class="item-cap bg-primary text-white br-5" style=" padding:10px; cursor:pointer" onclick="$('#p_gallery').toggle();">Photo Gallery plugins <span style="float:right; cursor:pointer; font-size:12px">[+/-]</span></div>
+                                        <div id="p_gallery" style="padding:10px 0px 10px 0px; display:none">               
+                                           <div class="cap" style="padding:6px">Copy & paste the below script to the body section of the page required</div>
+                                           <div style="padding:10px; font-size:14px; background:#f6f6f6; border:1px dashed green"><pre><code>&lt;div id=&quot;ifrcontainer&quot; style=&quot;padding: 10px;&quot;&gt;
+                            &lt;iframe src=&quot;https://eg.candygroupofschools.com.ng/gallery.aspx&quot; frameborder=&quot;0&quot; allowtransparency=&quot;true&quot; id=&quot;ifr&quot; height=&quot;&quot; width=&quot;&quot; style=&quot;min-height:600px&quot; scrolling=&quot;auto&quot;&gt;&lt;/iframe&gt;
+                            &lt;/div&gt;
+                            &lt;script type=&quot;text/javascript&quot; src=&quot;http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js&quot;&gt;&lt;/script&gt;
+                            &lt;script type=&quot;text/javascript&quot;&gt;
+                             function adjustSize() {
+                               $('#ifr').width($('#ifrcontainer').outerWidth());
+                             }
+                             adjustSize();
+                            &lt;/script&gt;</code></pre></div>
+                                           <div style="padding:6px; font-size:12px; background:#f6f6f6">                
+                                           </div>
+                                        </div>
+                                    </div>
+                            
+                                    <div style="padding-bottom:20px">
+                                        <div class="item-cap bg-primary text-white br-5" style=" padding:10px; cursor:pointer" onclick="$('#p_links').toggle();">Embeddable Links <span style="float:right; cursor:pointer; font-size:12px">[+/-]</span></div>
+                                        <div id="p_links" style="padding:10px 0px 10px 0px; display:none">               
+                                           <div class="cap" style="padding:6px">Copy & paste the below href elements to the body section of the page required</div>
+                                           <div style="padding:10px; font-size:14px; background:#f6f6f6; border:1px dashed green"><pre><code><b>Check Result link:</b>
+                            &lt;a href=&quot;https://eg.candygroupofschools.com.ng/resultchecker.aspx&quot; target=&quot;_blank&quot;&gt;Check Result&lt;/a&gt;
+                            <br/>
+                            <b>Check Admission result/status link:</b>
+                            &lt;a href=&quot;https://eg.candygroupofschools.com.ng/admission_resultchecker.aspx&quot; target=&quot;_blank&quot;&gt;Check Admission Result/Status&lt;/a&gt;
+                            <br/>
+                            <b>Staff Portal link:</b>
+                            &lt;a href=&quot;https://eg.candygroupofschools.com.ng/&quot; target=&quot;_blank&quot;&gt;Staff Portal&lt;/a&gt;
+                            <br/>
+                            <b>Student Portal link:</b>
+                            &lt;a href=&quot;https://eg.candygroupofschools.com.ng/students&quot; target=&quot;_blank&quot;&gt;Student Portal&lt;/a&gt;
+                            <br/>
+                            <b>Send Enquiry/Feedback link:</b>
+                            &lt;a href=&quot;https://eg.candygroupofschools.com.ng/enquiry_message.aspx&quot; target=&quot;_blank&quot;&gt;Make an enquiry/Feedback&lt;/a&gt;
+                            </code></pre></div>
+                                           <div style="padding:6px; font-size:12px; background:#f6f6f6">                
+                                           </div>
+                                        </div>
+                                    </div>
+                            
+                                </div>
+                            
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            
+                                    </div>
+                                </div>
+                               </div>
                             </div>
                         </div>
 
@@ -1061,6 +1236,10 @@
 
     <!-- Switcher js -->
     <script src="../assets/switcher/js/switcher.js"></script>
+
+    <!-- ACCORDION JS -->
+    <script src="../assets/plugins/accordion/accordion.min.js"></script>
+    <script src="../assets/plugins/accordion/accordion.js"></script>
 
   
 

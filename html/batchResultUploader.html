@@ -958,10 +958,93 @@
                         <!-- Row -->
 
                      <div class="container-fluid">
-                        <div class="card-body p-4">
-                            <a href="consoleUploadTermly.html" class="btn btn-primary">Single Opreation</a>
+                        <a href="consoleUploadTermly.html" class="btn btn-primary">Single Opreation</a>
+                        <div class="card p-4 mt-5">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label for="level" class="form-label">Level</label>
+                                        <select name="level" class="form-control form-select" id="level" data-bs-placeholder="Select level">
+                                            <option value="" >-Select-</option>
+                                            <option value="Junior Secondary" >Junior Secondary</option>
+                                            <option value="Senior Secondary" >Senior Secondary</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label for="session" class="form-label">Session</label>
+                                        <select name="session" class="form-control form-select" id="session" data-bs-placeholder="Select session">
+                                            <option value="" >-Select-</option>
+                                            <option value="2020/2021" >2020/2021</option>
+                                            <option value="2021/2022" >2021/2022</option>
+                                            <option value="2022/2023" >2022/2023</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label for="add-session" class="form-label">Term</label>
+                                        <select name="term" class="form-control form-select" id="term" data-bs-placeholder="Select term">
+                                            <option value="" >-Select-</option>
+                                            <option value="First term" >First term</option>
+                                            <option value="Second term" >Second term</option>
+                                             <option value="Third term" >Third term</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label for="add-session" class="form-label">Class</label>
+                                        <select name="class" class="form-control form-select" id="class" data-bs-placeholder="Select class">
+                                            <option value="" >-Select-</option>
+                                            <option value="JS1 DIAMOND" >JS1 DIAMOND</option>
+                                            <option value="JS1 PLATINUM" >JS1 PLATINUM</option>
+                                            <option value="JS2 DIAMOND" >JS2 DIAMOND</option>
+                                            <option value="JS2 PLATINUM" >JS2 PLATINUM</option>
+                                            <option value="JS3 DIAMOND" >JS3 DIAMOND</option>
+                                            <option value="JS3 PLATINUM" >JS3 PLATINUM</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                              
+                                
+                            </div>
+
+                            <div class="card-body p-0" ><br>
+                                <div class="row" id="file-box">
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <input type="file" name="" class="form-control" id="">
+                                        </div>
+                            
+                                        </div>
+
+                                        <div class="col-md-3">
+                                            <div class="form-group">
+                                                <select name="level" class="form-control form-select" id="level" data-bs-placeholder="Select level">
+                                                    <option value="" >-Select-</option>
+                                                </select>
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+                                    <div>
+                                        <button class="btn btn-gray" id="add-file">+ Add more File</button>
+                                    </div>
+
+                                    <div>
+                                        <button class="btn btn-primary mt-5">Update now</button>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                     </div>
+                     
 
                         <!-- /Row Ends here -->
                     </div>
@@ -1040,7 +1123,39 @@
     <!-- Switcher js -->
     <script src="../assets/switcher/js/switcher.js"></script>
 
-  
+  <script>
+
+
+    let btnFile=document.getElementById("add-file");
+
+    btnFile.addEventListener("click",()=>{
+        let fileBox=document.getElementById("file-box");
+let fileRow=document.createElement("div");
+fileRow.classList.add("row");
+fileRow.innerHTML=`<div class="col-md-4">
+                                        <div class="form-group">
+                                            <input type="file" name="" class="form-control" id="">
+                                        </div>
+                            
+                                        </div>
+
+                                        <div class="col-md-3">
+                                            <div class="form-group">
+                                                <select name="level" class="form-control form-select" id="level" data-bs-placeholder="Select level">
+                                                    <option value="" >-Select-</option>
+                                                </select>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-1"><button class="btn btn-danger close-file">X</button></div>
+`;
+
+fileBox.appendChild(fileRow);
+    })
+
+   
+
+  </script>
 
 </body>
 

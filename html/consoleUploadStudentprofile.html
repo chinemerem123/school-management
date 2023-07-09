@@ -967,7 +967,8 @@
                                 <div class="card-body p-0" >
 
                                     <div id="add-new-upload">
-                                        <div class="row mt-3">
+                                        <div class="row mt-3" id="rowTag">
+
                                             <div class="col-md-3">
                                                 <div class="form-group">
                                                     <input type="file" name="" class="form-control" id="">
@@ -1020,16 +1021,16 @@
                                                 </div>
                                             </div>
     
-                                            <!-- <div class="col-md-1">
-                                                <button class="btn btn-danger">X</button>
-                                            </div> -->
+                                             <div class="col-md-1">
+                                              
+                                            </div>
     
                                         </div>
                                     </div>
                                   
 
                                     <div>
-                                        <button class="btn btn-primary" id="addUpload">Add More File</button>
+                                        <button class="btn btn-primary" id="addfile">Add More File</button>
                                         <button type="submit" class="btn btn-primary">Upload</button>
                                     </div>
                                 </div>
@@ -1137,83 +1138,84 @@
     <script src="../assets/switcher/js/switcher.js"></script>
 
     <script>
+        let rowTag=document.querySelector("#rowTag");
 
-        let cardUpload=document.getElementById("add-new-upload");
-        let addUpload=document.getElementById("addUpload");
-        let create=document.createElement("div");
-        create.innerHTML=`<div class="row mt-3">
-                                        <div class="col-md-3">
-                                            <div class="form-group">
-                                                <input type="file" name="" class="form-control" id="">
+        document.querySelector("#addfile").addEventListener("click",()=>{
+            let newTag=document.createElement("div");
+        newTag.classList.add("row");
+       
+        newTag.innerHTML=` <div class="col-md-3">
+                                                <div class="form-group">
+                                                    <input type="file" name="" class="form-control" id="">
+                                                </div>
                                             </div>
-                                        </div>
-
-                                        <div class="col-md-2">
-                                            <div class="form-group">
-                                                <select name="level" class="form-control form-select" id="level" data-bs-placeholder="Select level">
-                                                    <option value="" >-Select-</option>
-                                                    <option value="Junior Secondary" >Junior Secondary</option>
-                                                    <option value="Senior Secondary" >Senior Secondary</option>
-                                                </select>
+    
+                                            <div class="col-md-2">
+                                                <div class="form-group">
+                                                    <select name="level" class="form-control form-select" id="level" data-bs-placeholder="Select level">
+                                                        <option value="" >-Select-</option>
+                                                        <option value="Junior Secondary" >Junior Secondary</option>
+                                                        <option value="Senior Secondary" >Senior Secondary</option>
+                                                    </select>
+                                                </div>
                                             </div>
-                                        </div>
-
-                                        <div class="col-md-2">
-                                            <div class="form-group">
-                                                <select name="session" class="form-control form-select" id="session" data-bs-placeholder="Select session">
-                                                    <option value="" >-Select-</option>
-                                                    <option value="2020/2021" >2020/2021</option>
-                                                    <option value="2021/2022" >2021/2022</option>
-                                                    <option value="2022/2023" >2022/2023</option>
-                                                </select>
+    
+                                            <div class="col-md-2">
+                                                <div class="form-group">
+                                                    <select name="session" class="form-control form-select" id="session" data-bs-placeholder="Select session">
+                                                        <option value="" >-Select-</option>
+                                                        <option value="2020/2021" >2020/2021</option>
+                                                        <option value="2021/2022" >2021/2022</option>
+                                                        <option value="2022/2023" >2022/2023</option>
+                                                    </select>
+                                                </div>
                                             </div>
-                                        </div>
-
-                                        <div class="col-md-2">
-                                            <div class="form-group">
-                                                <select name="term" class="form-control form-select" id="term" data-bs-placeholder="Select term">
-                                                    <option value="" >-Select-</option>
-                                                    <option value="First term" >First term</option>
-                                                    <option value="Second term" >Second term</option>
-                                                     <option value="Third term" >Third term</option>
-                                                </select>
+    
+                                            <div class="col-md-2">
+                                                <div class="form-group">
+                                                    <select name="term" class="form-control form-select" id="term" data-bs-placeholder="Select term">
+                                                        <option value="" >-Select-</option>
+                                                        <option value="First term" >First term</option>
+                                                        <option value="Second term" >Second term</option>
+                                                         <option value="Third term" >Third term</option>
+                                                    </select>
+                                                </div>
                                             </div>
-                                        </div>
-
-                                        <div class="col-md-2">
-                                            <div class="form-group">
-                                                <select name="class" class="form-control form-select" id="class" data-bs-placeholder="Select class">
-                                                    <option value="" >-Select-</option>
-                                                    <option value="JS1 DIAMOND" >JS1 DIAMOND</option>
-                                                    <option value="JS1 PLATINUM" >JS1 PLATINUM</option>
-                                                    <option value="JS2 DIAMOND" >JS2 DIAMOND</option>
-                                                    <option value="JS2 PLATINUM" >JS2 PLATINUM</option>
-                                                    <option value="JS3 DIAMOND" >JS3 DIAMOND</option>
-                                                    <option value="JS3 PLATINUM" >JS3 PLATINUM</option>
-                                                </select>
+    
+                                            <div class="col-md-2">
+                                                <div class="form-group">
+                                                    <select name="class" class="form-control form-select" id="class" data-bs-placeholder="Select class">
+                                                        <option value="" >-Select-</option>
+                                                        <option value="JS1 DIAMOND" >JS1 DIAMOND</option>
+                                                        <option value="JS1 PLATINUM" >JS1 PLATINUM</option>
+                                                        <option value="JS2 DIAMOND" >JS2 DIAMOND</option>
+                                                        <option value="JS2 PLATINUM" >JS2 PLATINUM</option>
+                                                        <option value="JS3 DIAMOND" >JS3 DIAMOND</option>
+                                                        <option value="JS3 PLATINUM" >JS3 PLATINUM</option>
+                                                    </select>
+                                                </div>
                                             </div>
-                                        </div>
+    
+                                            <div class="col-md-1">
+                                                <button class="btn btn-danger del" onClick="del()">X</button>
+                                            </div>`;
 
-                                        <div class="col-md-1">
-                                            <button class="btn btn-danger close-upload" id="close-upload">X</button>
-                                        </div>
+            rowTag.appendChild(newTag);
+        })
 
-                                    </div>`;
+        let dels=document.querySelectorAll(".del");
 
-                                   
-                addUpload.addEventListener('click',()=>{
-                    cardUpload.append(create);
-                })
-
-              let closeUp=  document.getElementById("close-upload");
-              closeUp.addEventListener('click',()=>{
-                        alert("hello");
-                        // this.parentElement.style.display="none";
-                    })
-                
-
-        </script>
-  
+        function del(){
+            alert("hello");
+        }
+        
+        // dels.forEach((del)=>{
+        //     del.addEventListener("click",()=>{
+        //         alert("hello");
+        //     })
+           
+        // })
+    </script>
 
 </body>
 

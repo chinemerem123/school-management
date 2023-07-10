@@ -944,100 +944,23 @@
 
                         <!-- PAGE-HEADER -->
                         <div class="page-header">
-                            <h1 class="page-title">Message inbox</h1>
+                            <h1 class="page-title">Empty</h1>
                             <div>
                                 <ol class="breadcrumb">
                                     <li class="breadcrumb-item"><a href="javascript:void(0)">Pages</a></li>
-                                    <li class="breadcrumb-item active" aria-current="page">Messages</li>
+                                    <li class="breadcrumb-item active" aria-current="page">Empty</li>
                                 </ol>
                             </div>
                         </div>
                         <!-- PAGE-HEADER END -->
 
-                        
+                        <!-- ROW-1 OPEN -->
                         <!-- Row -->
 
-                        <div class="container-fluid">
-                            <a href="addmessage.html" class="btn btn-gray">+ Create messages</a>
-                            <a href="sentmessage.html" class="btn btn-gray"><i class="bi bi-list"></i> View sent messages</a>
-
-                            <div class="card mt-5 p-4">
-                                <div class="row">
-                                    <div class="col-md-1">
-                                        <div class="form-group">
-                                            <label for="">.</label>
-                                            <br>
-                                            <button class="btn btn-danger">X Delete</button>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <div class="form-group">
-                                            <label for="#">Stort:</label>
-                                            <select name="level" class="form-control form-select" id="level" data-bs-placeholder="Select level">
-                                                <option value="Date Sent" >Date Sent</option>
-                                                <option value="Subject" >Subject</option>
-                                            </select>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-md-4">
-                                        <div class="form-group">
-                                            <label for="#">.</label>
-                                            <select name="level" class="form-control form-select" id="level" data-bs-placeholder="Select level">
-                                                <option value="Ascending" >Ascending</option>
-                                                <option value="Descending" >Descending</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="card-body p-0 mt-5">
-                                    <div class="table-responsive">
-                                        <table class="table table-bordered text-nowrap border-bottom" id="basic-datatable">
-                                            <thead>
-                                                <tr>
-                    
-                                                    <th>
-                                                        <label class="custom-control custom-checkbox">
-                                                            <input type="checkbox" class="custom-control-input" onClick="toggle(this)" >
-                                                            <span class="custom-control-label"></span>
-                                                        </label>
-                                                </th>
-                                                <th></th>
-                                                
-                                                    <th class="wd-15p border-bottom-0">Subject</th>
-                                                    <th class="wd-15p border-bottom-0">Message</th>
-                                                    <th class="wd-15p border-bottom-0">Date sent</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td>
-                                                        <label class="custom-control custom-checkbox">
-                                                            <input type="checkbox" class="custom-control-input" name="foo"  value="option1" >
-                                                            <span class="custom-control-label"></span>
-                                                        </label>
-                                                    </td>
-                                                    <td class="text-center"> 
-                                                        <a href="addmessage.html" class="text-gray"><i class="bi bi-reply-fill"></i></a>
-                                                        <a href="addmessage.html" class="text-gray ms-3"><i class="bi bi-arrow-right"></i></a>
-                                                    </td>
-                                                    <td><a data-bs-effect="effect-slide-in-bottom" data-bs-toggle="modal" href="#largemodal">New Account setup</a></td>
-                                                    <td>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem, blanditiis....</td>
-                                                    <td>24-Apr-2023</td>
-                                                   
-                                                </tr>
-    
-                                               
-                                                
-                                            </tbody>
-                                        </table>
-    
-                                        
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        <div class="row ">
+                       <div class="container-fluid">
+                        <div class="card"></div>
+                       </div>
 
                         <!-- /Row Ends here -->
                     </div>
@@ -1084,38 +1007,6 @@
         </footer>
         <!-- FOOTER CLOSED -->
     </div>
-
-     <!-- MODAL FOR NEW ACCOUNT SETUP-->
-     <div class="modal fade" id="largemodal" tabindex="-1" role="dialog">
-        <div class="modal-dialog modal-lg " role="document">
-            <div class="modal-content">
-                
-                <div class="modal-body text-md-left">
-                  <div>
-                    <p><b>Sender:</b> SuperAdmin<br>  <b>Date/Time:</b> Monday, April 24, 2023 14:54:57</p>
-                  </div>
-<div class="h2 mt-2 fw-bold">New Account Setup</div>
-
-                  <div class="mt-3">
-                    <p>
-                      <b>  ====================================================<br>
-Date/Time: Monday, April 24, 2023 02:54<br>
-====================================================</b><br>
-Welcome! demo,
-You can now successfully log in to School Manager App using your new created credentials.<br>
-<b>Username:</b> demo,<br>
-<b>Password:</b> demo4534<br>
-Thanks.
-                    </p>
-                  </div>
-                </div>
-                
-            </div>
-        </div>
-    </div>
-    
-    <!-- MODAL FOR NEW ACCOUNT SETUP ENDS HERE-->
-
 
     <!-- BACK-TO-TOP -->
     <a href="#top" id="back-to-top"><i class="fa fa-angle-up"></i></a>
@@ -1169,8 +1060,6 @@ Thanks.
 
     <!-- Switcher js -->
     <script src="../assets/switcher/js/switcher.js"></script>
-
-    <script src="/assets/js/override.js"></script>
 
   
 

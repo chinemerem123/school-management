@@ -44,6 +44,8 @@
 
 <body class="app sidebar-mini ltr">
 
+    <!-- data-bs-toggle="sidebar-right" data-target=".sidebar-right" -->
+
     <!-- Switcher -->
     <div class="switcher-wrapper">
         <div class="demo_changer">
@@ -423,19 +425,13 @@
                                         <!-- FULL-SCREEN -->
                                        
                                         <div class="dropdown  d-flex message">
-                                            <a class="nav-link icon text-center" data-bs-toggle="dropdown" href="message.html">
+                                            <a class="nav-link icon text-center" data-bs-toggle="dropdown">
                                                 <i class="fe fe-message-square"></i><span class="pulse-danger"></span>
                                             </a>
                                            
                                         </div>
                                         <!-- MESSAGE-BOX -->
-                                        <div class="dropdown d-flex header-settings">
-                                            <a href="javascript:void(0);" class="nav-link icon"
-                                                data-bs-toggle="sidebar-right" data-target=".sidebar-right">
-                                                <i class="fe fe-align-right"></i>
-                                            </a>
-                                        </div>
-                                        <!-- SIDE-MENU -->
+                                      
                                         <div class="dropdown d-flex profile-1">
                                             <a href="javascript:void(0)" data-bs-toggle="dropdown" class="nav-link leading-none d-flex">
                                                 <img src="../assets/images/users/21.jpg" alt="profile-user"
@@ -448,7 +444,7 @@
                                                     </div>
                                                 </div>
                                                 <div class="dropdown-divider m-0"></div>
-                                                <a class="dropdown-item" href="changeProfile.html">
+                                                <a class="dropdown-item" href="#">
                                                     Change Picture
                                                 </a>
                                                 <a class="dropdown-item" href="#">
@@ -549,6 +545,7 @@
                                 <li><a href="StudentResultAddSocial.html" class="slide-item"> Add new social behaviour</a></li>
                                 <li><a href="StudentResultAddComment.html" class="slide-item"> Add new comment</a></li>
                                 <li><a href="StudentResultAddMock.html" class="slide-item"> Add new mock result</a></li>
+                                <li><a href="StudentResultViewResult.html" class="slide-item"> View result record</a></li>
                                 <li><a href="StudentResultViewComment.html" class="slide-item"> View comments</a></li>
                                 <li><a href="StudentResultViewSocial.html" class="slide-item"> View social behaviour</a></li>
                                 <li><a href="StudentResultViewSheet.html" class="slide-item"> View master Sheets</a></li>
@@ -947,11 +944,11 @@
 
                         <!-- PAGE-HEADER -->
                         <div class="page-header">
-                            <h1 class="page-title">Welcome</h1>
+                            <h1 class="page-title">Update Profile Picture</h1>
                             <div>
                                 <ol class="breadcrumb">
                                     <li class="breadcrumb-item"><a href="javascript:void(0)">Pages</a></li>
-                                    <li class="breadcrumb-item active" aria-current="page">Dashboard</li>
+                                    <li class="breadcrumb-item active" aria-current="page">Change Profile Picture</li>
                                 </ol>
                             </div>
                         </div>
@@ -960,11 +957,26 @@
                       
                         <!-- Row -->
 
-                    <div class="container-fluid">
-                       
-                        <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23ffffff&ctz=Etc%2FGMT&showTitle=0&src=Y2hyaXNubmFqaTQ0M0BnbWFpbC5jb20&src=ZW4ubmcjaG9saWRheUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&color=%23039BE5&color=%230B8043"  style="border-width:0" width="850" height="600" frameborder="0" scrolling="no"></iframe>
-                    
-                    </div>
+                       <div class="container-fluid">
+                        <div class="card p-4">
+                            <form action="">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="pics">Upload Picture</label>
+                                        <input type="file" name="" class="form-control" id="">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div>
+                                <button type="submit" class="btn btn-primary">Upload</button>
+                            </div>
+                        </form>
+
+                        </div>
+                       </div>
+
                         <!-- /Row Ends here -->
                     </div>
                     <!-- CONTAINER CLOSED -->
@@ -972,12 +984,29 @@
             </div>
             <!--app-content closed-->
         </div>
+  <!-- Sidebar-right -->
+  <div class="sidebar sidebar-right sidebar-animate">
+    <div class="d-flex p-3">
+     <input type="text" class="form-control" placeholder="Enetr Reg Number">
+     <button class="btn btn-primary">Search</button>
+    </div>
 
-        <!-- Sidebar-right -->
-        <div class="sidebar sidebar-right sidebar-animate">
-           
-        </div>
-        <!--/Sidebar-right-->
+    <div class="media media-xs overflow-visible mt-3 p-4">
+     <img class="avatar  avatar-xl me-3" src="../assets/images/users/2.jpg" alt="avatar-img">
+     <div class="media-body valign-middle">
+         <a href="javascript:filltxt('CICA/2020/006'.'input-txt-regno')" class="fw-semibold text-dark">	ECHETABU, MUNACHIMSO MARYANN</a>
+     </div>
+ </div>
+
+ <div class="media media-xs overflow-visible mt-3 p-4">
+     <img class="avatar  avatar-xl me-3" src="../assets/images/users/2.jpg" alt="avatar-img">
+     <div class="media-body valign-middle">
+         <a href="javascript:filltxt('CICA/2020/006'.'input-txt-regno')" class="fw-semibold text-dark">	ECHETABU, MUNACHIMSO MARYANN</a>
+     </div>
+ </div>
+
+ </div>
+ <!--/Sidebar-right-->
 
       
 
@@ -1024,6 +1053,22 @@
 
     <!-- Sticky js -->
     <script src="../assets/js/sticky.js"></script>
+
+    
+     <!-- DATA TABLE JS-->
+     <script src="../assets/plugins/datatable/js/jquery.dataTables.min.js"></script>
+     <script src="../assets/plugins/datatable/js/dataTables.bootstrap5.js"></script>
+     <script src="../assets/plugins/datatable/js/dataTables.buttons.min.js"></script>
+     <script src="../assets/plugins/datatable/js/buttons.bootstrap5.min.js"></script>
+     <script src="../assets/plugins/datatable/js/jszip.min.js"></script>
+     <script src="../assets/plugins/datatable/pdfmake/pdfmake.min.js"></script>
+     <script src="../assets/plugins/datatable/pdfmake/vfs_fonts.js"></script>
+     <script src="../assets/plugins/datatable/js/buttons.html5.min.js"></script>
+     <script src="../assets/plugins/datatable/js/buttons.print.min.js"></script>
+     <script src="../assets/plugins/datatable/js/buttons.colVis.min.js"></script>
+     <script src="../assets/plugins/datatable/dataTables.responsive.min.js"></script>
+     <script src="../assets/plugins/datatable/responsive.bootstrap5.min.js"></script>
+     <script src="../assets/js/table-data.js"></script>
 
     <!-- CUSTOM JS -->
     <script src="../assets/js/custom1.js"></script>

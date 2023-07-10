@@ -944,11 +944,11 @@
 
                         <!-- PAGE-HEADER -->
                         <div class="page-header">
-                            <h1 class="page-title">Empty</h1>
+                            <h1 class="page-title">Create new message</h1>
                             <div>
                                 <ol class="breadcrumb">
                                     <li class="breadcrumb-item"><a href="javascript:void(0)">Pages</a></li>
-                                    <li class="breadcrumb-item active" aria-current="page">Empty</li>
+                                    <li class="breadcrumb-item active" aria-current="page">Add Message</li>
                                 </ol>
                             </div>
                         </div>
@@ -959,7 +959,50 @@
 
                         <div class="row ">
                        <div class="container-fluid">
-                        <div class="card"></div>
+                        <a href="sentmessage.html" class="btn btn-gray"><i class="bi bi-list"></i> View messages Inbox</a>
+                        <a href="sentmessage.html" class="btn btn-gray mt-3 mt-md-0"><i class="bi bi-list"></i> View sent messages</a>
+
+                        <div class="card p-4 mt-5">
+                            <div class="form-group">
+                                <label for="">Recipients</label>
+                                <div class="d-flex">
+
+                                    <div class="flex-column">
+                                        <select name="level" class="form-control form-select flex-column" id="level" data-bs-placeholder="Select level">
+                                            <option value="-Select-" >-Select-</option>
+                                        </select>
+                                    </div>
+
+                                        <div class="bt d-flex">
+                                            <button class="btn btn-primary ms-2">+ Add</button>
+                                            <button type="reset" class="btn btn-danger ms-2">+ Clear</button>
+                                        </div>
+<div class="flex-column">
+                                        <input type="text" name="" class="form-control ms-2 flex-column" id="" >
+                                    </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="">Subject</label>
+                                            <input type="text" name="" class="form-control" id="">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="">Message</label>
+                                           
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
                        </div>
 
                         <!-- /Row Ends here -->

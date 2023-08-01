@@ -1144,7 +1144,7 @@
                                         <button class=" sub-btn btn btn-primary mt-4 mb-0 p-2 " id="behave-add">Add </button>
                                     </div>
 
-                                    <button  id="add-behave" class=" sub-btn btn btn-gray mt-4 mb-0 p-2">Add new social behaviour</button>
+                                    <button type="button"  id="add-behave" class=" sub-btn btn btn-gray mt-4 mb-0 p-2">Add new social behaviour</button>
 
                                     
 
@@ -1259,8 +1259,20 @@
     <!-- Switcher js -->
     <script src="../assets/switcher/js/switcher.js"></script>
 
-    <!-- Override js-->
-    <script src="/assets/js/override.js"></script>
+
+    <script>
+        let addBehave=document.getElementById("add-behave");
+let behaveAdd=document.getElementById("behave-add");
+let addBehaveBox=document.getElementById("add-behave-box");
+
+addBehave.addEventListener("click",()=>{
+addBehaveBox.style.display="block";
+})
+
+behaveAdd.addEventListener("click",()=>{
+    addBehaveBox.style.display="none";
+    })
+    </script>
 
 </body>
 
